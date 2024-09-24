@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <AppHeader />
-    //<FlightSearch />
+    <FlightSearch />
     <AppFooter />
   </div>
 </template>
@@ -20,12 +20,3 @@ export default {
   },
 };
 </script>
-
-<style> 
-.body {
-  background-color:#eef1f4;
-  font-family:Inter,sans-serif;
-  font-weight:200
-}
-
-</style>
