@@ -8,14 +8,14 @@
   
 <script>
 import AppHeader from './components/AppHeader.vue';
-//import FlightSearch from './components/FlightSearch.vue';
+import FlightSearch from './components/FlightSearch.vue';
 import AppFooter from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    //FlightSearch,
+    FlightSearch,
     AppFooter,
   },
 };

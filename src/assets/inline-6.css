@@ -1,0 +1,7 @@
+
+                        @media screen and (max-width: 767px) {
+                            .p-overlaypanel[pv_id_1] {
+                                width: auto !important;
+                            }
+                        }
+                    

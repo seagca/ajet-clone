@@ -1,16 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/*@font-face {
+@font-face {
   font-family:Material Icons;
   font-style:normal;
   font-weight:400;
   font-display:block;
   
-  src:url(/assets/material-icons-8265f647.woff2) format("woff2"),
-  url(/assets/material-icons-fd84f88b.woff) format("woff")
-}*/
+  src:url(material-icons-8265f647.woff2) format("woff2"),
+  url(material-icons-fd84f88b.woff) format("woff")
+}
 
 .material-icons {
   font-family:Material Icons;
@@ -29,15 +26,15 @@
   text-rendering:optimizeLegibility;
   font-feature-settings:"liga"
 }
-/*
+
 @font-face {
   font-family:Material Icons Outlined;
   font-style:normal;
   font-weight:400;
   font-display:block;
-  src:url(/assets/material-icons-outlined-35dca8a7.woff2) format("woff2"),
-  url(/assets/material-icons-outlined-8e94758c.woff) format("woff")
-}*/
+  src:url(material-icons-outlined-35dca8a7.woff2) format("woff2"),
+  url(material-icons-outlined-8e94758c.woff) format("woff")
+}
 .material-icons-outlined {
   font-family:Material Icons Outlined;
   font-weight:400;
@@ -55,16 +52,16 @@
   text-rendering:optimizeLegibility;
   font-feature-settings:"liga"
 }
-/*
+
 @font-face {
   font-family:Material Icons Round;
   font-style:normal;
   font-weight:400;
   font-display:block;
-  src:url(/assets/material-icons-round-c948f126.woff2) format("woff2"),
-  url(/assets/material-icons-round-1c135b15.woff) format("woff")
+  src:url(material-icons-round-c948f126.woff2) format("woff2"),
+  url(material-icons-round-1c135b15.woff) format("woff")
 }
-  */
+  
 .material-icons-round {
   font-family:Material Icons Round;
   font-weight:400;
@@ -82,15 +79,15 @@
   text-rendering:optimizeLegibility;
   font-feature-settings:"liga"
 }
-/*
+
 @font-face {
   font-family:Material Icons Sharp;
   font-style:normal;
   font-weight:400;
   font-display:block;
-  src:url(/assets/material-icons-sharp-d31bfb81.woff2) format("woff2"),
-  url(/assets/material-icons-sharp-fa3888ef.woff) format("woff")
-}*/
+  src:url(material-icons-sharp-d31bfb81.woff2) format("woff2"),
+  url(material-icons-sharp-fa3888ef.woff) format("woff")*/
+}
 .material-icons-sharp {
   font-family:Material Icons Sharp;
   font-weight:400;
@@ -108,15 +105,15 @@
   text-rendering:optimizeLegibility;
   font-feature-settings:"liga"
 }
-/*
+
 @font-face {
   font-family:Material Icons Two Tone;
   font-style:normal;
   font-weight:400;
   font-display:block;
-  src:url(/assets/material-icons-two-tone-1e673ba8.woff2) format("woff2"),
-  url(/assets/material-icons-two-tone-3d34f30a.woff) format("woff")
-}*/
+  src:url(material-icons-two-tone-1e673ba8.woff2) format("woff2"),
+  url(material-icons-two-tone-3d34f30a.woff) format("woff")
+}
 .material-icons-two-tone {
   font-family:Material Icons Two Tone;
   font-weight:400;
@@ -49385,9 +49382,9 @@ section.full,
     color:var(--ajt-blue)
   }
 }
-/*
+
 .custom-toggler {
-  background-image:url(/_ajt_theme/img/toggler-icon-expanded.svg)!important;
+  background-image:url(toggler-icon-expanded.svg)!important;
   background-size:1rem!important;
   background-repeat:no-repeat!important;
   background-position:center!important;
@@ -50310,13 +50307,13 @@ section.full,
 ._ajt_large_container.city-guide-page .border-light-blue {
   border-color:#c0e3ff
 }
-/*
+
 @media (min-width: 1500px) {
   ._ajt_large_container.city-guide-page .map {
     height:56rem;
-    background-image:url(/images/tr-map.png)
+    background-image:url(tr-map.png)
   }
-}*/
+}
 @media (min-width: 1800px) {
   ._ajt_large_container.city-guide-page .map {
     height:64rem
@@ -53215,11 +53212,11 @@ div.container-medium {
 }
 .progress-bar-container.open {
   padding-bottom:0
-}/*
+}
 @media (min-width: 1440px) {
   .progress-bar-container main.relative:before {
     content:"";
-    background-image:url(/assets/sticky-ajet-logo-6a2144bb.svg);
+    background-image:url(sticky-ajet-logo-6a2144bb.svg);
     background-repeat:no-repeat;
     background-position:bottom;
     background-size:cover;
@@ -53233,7 +53230,7 @@ div.container-medium {
   }
   .progress-bar-container.open main.relative:before {
     content:"";
-    background-image:url(/assets/sticky-ajet-logo-6a2144bb.svg);
+    background-image:url(sticky-ajet-logo-6a2144bb.svg);
     background-repeat:no-repeat;
     background-position:left bottom;
     background-size:unset;
@@ -53290,7 +53287,7 @@ div.container-medium {
     padding-left:16px;
     border-left:1px solid var(--secondary-400)
   }
-}*/
+}
 .progress-bar-container .btn-detail {
   display:flex;
   align-items:center;
@@ -54239,19 +54236,19 @@ div.container-medium {
 .border-color-lighter {
   border-color:var(--text-color-lighter)
 }
-/*
+
 @font-face {
   font-family:primeicons;
   font-display:block;
-  src:url(/assets/primeicons-ce852338.eot);
-  src:url(/assets/primeicons-ce852338.eot?#iefix) format("embedded-opentype"),
-  url(/assets/primeicons-3824be50.woff2) format("woff2"),
-  url(/assets/primeicons-90a58d3a.woff) format("woff"),
-  url(/assets/primeicons-131bc3bf.ttf) format("truetype"),
-  url(/assets/primeicons-5e10f102.svg?#primeicons) format("svg");
+  src:url(primeicons-ce852338.eot);
+  src:url(primeicons-ce852338.eot?#iefix) format("embedded-opentype"),
+  url(primeicons-3824be50.woff2) format("woff2"),
+  url(primeicons-90a58d3a.woff) format("woff"),
+  url(primeicons-131bc3bf.ttf) format("truetype"),
+  url(primeicons-5e10f102.svg?#primeicons) format("svg");
   font-weight:400;
   font-style:normal
-}*/
+}
 .pi {
   font-family:primeicons;
   speak:none;
@@ -55821,9 +55818,9 @@ div.container-medium {
     padding:32px
   }
 }
-/*
+
 .login-form.page-landing .promotion-text-container .background-shape-fill {
-  background-image:url(/images/logo-silluet.png);
+  background-image:url(logo-silluet.png);
   background-repeat:no-repeat;
   background-position:bottom right;
   background-size:50%;
@@ -55833,7 +55830,7 @@ div.container-medium {
   height:100%;
   top:0;
   left:0
-}*/
+}
 .login-form.page-landing .promotion-text-container .advantages-text-container li {
   margin-bottom:12px;
   font-size:1rem;
@@ -55856,9 +55853,9 @@ div.container-medium {
 }
 .login-form .promotion-text-container>div {
   z-index:1
-}/*
+}
 .login-form .promotion-text-container .background-shape-fill {
-  background-image:url(/assets/login-panel-background-f410d964.svg);
+  background-image:url(login-panel-background-f410d964.svg);
   background-repeat:no-repeat;
   background-position:top right;
   background-size:86%;
@@ -55871,7 +55868,7 @@ div.container-medium {
   fill:var(--Primary-500, #008cff)
 }
 .login-form .promotion-text-container .background-shape-fill-grad {
-  background-image:url(/assets/login-panel-background-f410d964.svg);
+  background-image:url(login-panel-background-f410d964.svg);
   background-repeat:no-repeat;
   background-position:top right;
   background-size:86%;
@@ -55883,7 +55880,7 @@ div.container-medium {
   left:0;
   fill:linear-gradient(141deg,#d9d9d9 -17.48%,rgba(217,217,217,0) 61.64%);
   mix-blend-mode:soft-light
-}*/
+}
 .login-form .promotion-text-container .text-md {
   font-size:1rem
 }
