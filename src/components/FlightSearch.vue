@@ -7,16 +7,62 @@
       <div
         class="swiper-wrapper"
         style="
-          transform: translate3d(-2400px, 0px, 0px);
+          transform: translate3d(-3840px, 0px, 0px);
           transition-duration: 0ms;
           transition-delay: 0ms;
         "
       >
         <div
           data-v-9cb3d8ec=""
-          class="swiper-slide swiper-slide-prev"
+          class="swiper-slide"
           data-swiper-slide-index="0"
-          style="width: 2400px"
+          style="width: 1920px"
+        >
+          <a
+            data-v-9cb3d8ec=""
+            href="/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet"
+            class=""
+          >
+            <div
+              data-v-a9e7a9f6=""
+              data-v-9cb3d8ec=""
+              class="slide has-rights"
+              style="
+                --ef97a558: url(/20240928/EN/350x235.jpg);
+                --d93e49d0: url(/20240928/EN/570x330.jpg);
+                --ac9df3dc: url(/20240928/EN/1900x640.jpg);
+              "
+            ></div> </a
+          ><!---->
+        </div>
+        <div
+          data-v-9cb3d8ec=""
+          class="swiper-slide swiper-slide-prev"
+          data-swiper-slide-index="1"
+          style="width: 1920px"
+        >
+          <a
+            data-v-9cb3d8ec=""
+            href="/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app"
+            class=""
+          >
+            <div
+              data-v-a9e7a9f6=""
+              data-v-9cb3d8ec=""
+              class="slide has-rights"
+              style="
+                --ef97a558: url(/20240929/EN/350x235.jpg);
+                --d93e49d0: url(/20240929/EN/570x330.jpg);
+                --ac9df3dc: url(/20240929/EN/1900x640.jpg);
+              "
+            ></div> </a
+          ><!---->
+        </div>
+        <div
+          data-v-9cb3d8ec=""
+          class="swiper-slide swiper-slide-active"
+          data-swiper-slide-index="2"
+          style="width: 1920px"
         >
           <a
             data-v-9cb3d8ec=""
@@ -28,32 +74,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(/_ajt_theme/press/20240911/EN/350x235.jpg);
-                --d93e49d0: url(/_ajt_theme/press/20240911/EN/570x330.jpg);
-                --ac9df3dc: url(/_ajt_theme/press/20240911/EN/1900x640.jpg);
-              "
-            ></div> </a
-          ><!---->
-        </div>
-        <div
-          data-v-9cb3d8ec=""
-          class="swiper-slide swiper-slide-active"
-          data-swiper-slide-index="1"
-          style="width: 2400px"
-        >
-          <a
-            data-v-9cb3d8ec=""
-            href="/en/media/press-and-announcements/ticket-sales-for-istanbul-sabiha-gokcen–tuzla-have-started"
-            class=""
-          >
-            <div
-              data-v-a9e7a9f6=""
-              data-v-9cb3d8ec=""
-              class="slide has-rights"
-              style="
-                --ef97a558: url(/_ajt_theme/press/20240909/EN/350x235.jpg);
-                --d93e49d0: url(/_ajt_theme/press/20240909/EN/570x330.jpg);
-                --ac9df3dc: url(/_ajt_theme/press/20240909/EN/1900x640.jpg);
+                --ef97a558: url(/20240911/EN/350x235.jpg);
+                --d93e49d0: url(/20240911/EN/570x330.jpg);
+                --ac9df3dc: url(/20240911/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
@@ -61,8 +84,8 @@
         <div
           data-v-9cb3d8ec=""
           class="swiper-slide swiper-slide-next"
-          data-swiper-slide-index="2"
-          style="width: 2400px"
+          data-swiper-slide-index="3"
+          style="width: 1920px"
         >
           <a
             data-v-9cb3d8ec=""
@@ -75,9 +98,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(/_ajt_theme/press/20240813/EN/350x235.jpg);
-                --d93e49d0: url(/_ajt_theme/press/20240813/EN/570x330.jpg);
-                --ac9df3dc: url(/_ajt_theme/press/20240813/EN/1900x640.jpg);
+                --ef97a558: url(/20240813/EN/350x235.jpg);
+                --d93e49d0: url(/20240813/EN/570x330.jpg);
+                --ac9df3dc: url(/20240813/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
@@ -92,10 +115,11 @@
         data-v-8cb3e393=""
         data-v-9cb3d8ec=""
         class="slider-control action-buttons"
-        style="--071f8bef: flex-start; --006c92dc: 69px"
+        style="--071f8bef: flex-start; --006c92dc: 87px"
       >
         <div data-v-8cb3e393="" class="swp-paginate">
           <span data-v-8cb3e393="" class=""></span
+          ><span data-v-8cb3e393="" class=""></span
           ><span data-v-8cb3e393="" class="active"></span
           ><span data-v-8cb3e393="" class=""></span>
         </div>
@@ -217,7 +241,7 @@
                       role="presentation"
                       aria-hidden="true"
                       data-pc-section="inkbar"
-                      style="width: 230px; left: 0px"
+                      style="width: 248px; left: 0px"
                     ></li>
                   </ul>
                 </div>
@@ -802,14 +826,21 @@
           >
             <div
               data-v-abe43e5f=""
-              class="swiper swiper-initialized swiper-horizontal carousel multi"
+              class="swiper swiper-initialized swiper-horizontal carousel multi swiper-backface-hidden"
             >
-              <div class="swiper-wrapper">
+              <div
+                class="swiper-wrapper"
+                style="
+                  transition-duration: 0ms;
+                  transform: translate3d(-692px, 0px, 0px);
+                  transition-delay: 0ms;
+                "
+              >
                 <div
                   data-v-abe43e5f=""
-                  class="swiper-slide swiper-slide-active"
+                  class="swiper-slide swiper-slide-prev"
                   data-swiper-slide-index="0"
-                  style="width: 346px"
+                  style="width: 692px"
                 >
                   <!---->
                   <div
@@ -817,14 +848,15 @@
                     data-v-abe43e5f=""
                     class="slide"
                     style="
-                      --55b64b8c: url(src/assets/trabzon.webp);
+                      --55b64b8c: url(/trabzon.webp);
                     "
                   >
                     <a
                       data-v-0e3cbb4c=""
                       href="/en/city-guide/trabzon-flight-ticket"
                       class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
-                      ><div data-v-0e3cbb4c="" class="box-image"></div>
+                    >
+                      <div data-v-0e3cbb4c="" class="box-image"></div>
                       <div
                         data-v-0e3cbb4c=""
                         class="box-info flex flex-column justify-content-between px-12 pb-18"
@@ -863,16 +895,17 @@
                               alt=""
                             />
                           </div>
-                        </div></div
-                    ></a>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                   <!----><!----><!----><!----><!----><!---->
                 </div>
                 <div
                   data-v-abe43e5f=""
-                  class="swiper-slide swiper-slide-next"
+                  class="swiper-slide swiper-slide-active"
                   data-swiper-slide-index="1"
-                  style="width: 346px"
+                  style="width: 692px"
                 >
                   <!---->
                   <div
@@ -880,14 +913,15 @@
                     data-v-abe43e5f=""
                     class="slide"
                     style="
-                      --55b64b8c: url(/_ajt_theme/img/city-guide/thumbnails/erzurum.webp);
+                      --55b64b8c: url(/erzurum.webp);
                     "
                   >
                     <a
                       data-v-0e3cbb4c=""
                       href="/en/city-guide/erzurum-flight-ticket"
                       class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
-                      ><div data-v-0e3cbb4c="" class="box-image"></div>
+                    >
+                      <div data-v-0e3cbb4c="" class="box-image"></div>
                       <div
                         data-v-0e3cbb4c=""
                         class="box-info flex flex-column justify-content-between px-12 pb-18"
@@ -922,20 +956,21 @@
                           <div data-v-0e3cbb4c="" class="arrow">
                             <img
                               data-v-0e3cbb4c=""
-                              src="/assets/arrow-right-255a83a7.svg"
+                              src="@/assets/arrow-right-255a83a7.svg"
                               alt=""
                             />
                           </div>
-                        </div></div
-                    ></a>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                   <!----><!----><!----><!----><!----><!---->
                 </div>
                 <div
                   data-v-abe43e5f=""
-                  class="swiper-slide"
+                  class="swiper-slide swiper-slide-next"
                   data-swiper-slide-index="2"
-                  style="width: 346px"
+                  style="width: 692px"
                 >
                   <!---->
                   <div
@@ -943,14 +978,15 @@
                     data-v-abe43e5f=""
                     class="slide"
                     style="
-                      --55b64b8c: url(/_ajt_theme/img/city-guide/adana.webp);
+                      --55b64b8c: url(/adana.webp);
                     "
                   >
                     <a
                       data-v-0e3cbb4c=""
                       href="/en/city-guide/adana-flight-ticket"
                       class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
-                      ><div data-v-0e3cbb4c="" class="box-image"></div>
+                    >
+                      <div data-v-0e3cbb4c="" class="box-image"></div>
                       <div
                         data-v-0e3cbb4c=""
                         class="box-info flex flex-column justify-content-between px-12 pb-18"
@@ -989,8 +1025,9 @@
                               alt=""
                             />
                           </div>
-                        </div></div
-                    ></a>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                   <!----><!----><!----><!----><!----><!---->
                 </div>
@@ -998,7 +1035,7 @@
                   data-v-abe43e5f=""
                   class="swiper-slide"
                   data-swiper-slide-index="3"
-                  style="width: 346px"
+                  style="width: 692px"
                 >
                   <!---->
                   <div
@@ -1006,14 +1043,15 @@
                     data-v-abe43e5f=""
                     class="slide"
                     style="
-                      --55b64b8c: url(/_ajt_theme/img/city-guide/bodrum.webp);
+                      --55b64b8c: url(/bodrum.webp);
                     "
                   >
                     <a
                       data-v-0e3cbb4c=""
                       href="/en/city-guide/bodrum-flight-ticket"
                       class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
-                      ><div data-v-0e3cbb4c="" class="box-image"></div>
+                    >
+                      <div data-v-0e3cbb4c="" class="box-image"></div>
                       <div
                         data-v-0e3cbb4c=""
                         class="box-info flex flex-column justify-content-between px-12 pb-18"
@@ -1052,18 +1090,61 @@
                               alt=""
                             />
                           </div>
-                        </div></div
-                    ></a>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                   <!----><!----><!----><!----><!----><!---->
                 </div>
               </div>
-              <!----><!----><!----><span
+              <!----><!----><!---->
+              <div
+                data-v-5c1187bc=""
                 data-v-abe43e5f=""
-                class="hidden"
-              ></span>
+                class="slider-control controller"
+                style="--cfbe0776: center; --0a8cc1e8: 69px"
+              >
+                <div data-v-5c1187bc="" class="swp-nav">
+                  <div data-v-5c1187bc="" class="swp swp-prev">
+                    <img
+                      data-v-5c1187bc=""
+                      src="@/assets/chevron-left-ab39b75e.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div data-v-5c1187bc="" class="swp-paginate">
+                  <span data-v-5c1187bc="" class=""></span
+                  ><span data-v-5c1187bc="" class="active"></span
+                  ><span data-v-5c1187bc="" class=""></span>
+                </div>
+                <div data-v-5c1187bc="" class="swp-nav">
+                  <div data-v-5c1187bc="" class="swp swp-next">
+                    <img
+                      data-v-5c1187bc=""
+                      src="@/assets/chevron-right-b7eac6e0.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
-            <!---->
+            <div
+              data-v-abe43e5f=""
+              class="nav flex justify-content-between align-items-center"
+            >
+              <img
+                data-v-abe43e5f=""
+                class="prev"
+                src="@/assets/arrow-left-4e890973.svg"
+                alt=""
+              /><img
+                data-v-abe43e5f=""
+                class="next"
+                src="@/assets/arrow-right-255a83a7.svg"
+                alt=""
+              />
+            </div>
           </div>
         </section>
       </div>
@@ -2163,4 +2244,3 @@ export default {
   name: "FlightSearch",
 };
 </script>
-
