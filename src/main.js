@@ -1,7 +1,7 @@
 
 import { createApp } from 'vue';
 import App from './App.vue';
-import './assets/css2-1.css';
+/*import './assets/css2-1.css';
 import './assets/css2-2.css';
 import './assets/css2-3.css';
 import './assets/main.css';
@@ -31,7 +31,7 @@ import './assets/inline-8.css';
 import './assets/inline-9.css';
 import './assets/inline-10.css';
 import './assets/inline-11.css';
-import './assets/Gl1X.css';
+import './assets/Gl1X.css';*/
 
 
 

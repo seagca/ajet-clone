@@ -817,7 +817,7 @@
                     data-v-abe43e5f=""
                     class="slide"
                     style="
-                      --55b64b8c: url(@/assets/trabzon.webp);
+                      --55b64b8c: url(src/assets/trabzon.webp);
                     "
                   >
                     <a
@@ -859,7 +859,7 @@
                           <div data-v-0e3cbb4c="" class="arrow">
                             <img
                               data-v-0e3cbb4c=""
-                              src="/assets/arrow-right-255a83a7.svg"
+                              src="@/assets/arrow-right-255a83a7.svg"
                               alt=""
                             />
                           </div>
@@ -985,7 +985,7 @@
                           <div data-v-0e3cbb4c="" class="arrow">
                             <img
                               data-v-0e3cbb4c=""
-                              src="/assets/arrow-right-255a83a7.svg"
+                              src="@/assets/arrow-right-255a83a7.svg"
                               alt=""
                             />
                           </div>
@@ -1048,7 +1048,7 @@
                           <div data-v-0e3cbb4c="" class="arrow">
                             <img
                               data-v-0e3cbb4c=""
-                              src="/assets/arrow-right-255a83a7.svg"
+                              src="@/assets/arrow-right-255a83a7.svg"
                               alt=""
                             />
                           </div>
@@ -2164,26 +2164,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.flight-search form {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  margin-right: 15px;
-}
-
-button {
-  background-color: #004b97;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-</style>
