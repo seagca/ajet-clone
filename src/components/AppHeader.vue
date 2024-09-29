@@ -218,7 +218,7 @@
           </div>
         </div>
       </div>
-      <div data-v-93c6af58="" class="close active">
+      <div data-v-93c6af58="" class="close active" @click="closeBannerWrapper">
         <span data-v-93c6af58="" class="material-icons">cancel</span>
       </div>
     </div>
@@ -432,6 +432,38 @@
 
 
 <script>
+
+export default {
+
+  
+  methods: {
+    closeBannerWrapper() {
+      // Select active elements
+      const activeElements = document.querySelectorAll('.active[data-v-93c6af58]');
+      const headerFix = document.querySelector('.header-fix');
+      const largeContainer = document.querySelector('._ajt_large_container');
+      
+      // Remove the "active" class from all active elements
+      activeElements.forEach(element => element.classList.remove("active"));
+
+      // Change the height using CSS variables
+      if (headerFix && largeContainer) {
+        headerFix.style.setProperty('--39271329', '70px');
+        largeContainer.style.setProperty('--22e0a771', '70px');
+      }
+      
+      // Remove the top-banner-wrapper after a delay, if it exists
+      const topBannerWrapper = document.querySelector('.top-banner-wrapper');
+      if (topBannerWrapper) {
+        setTimeout(() => topBannerWrapper.remove(), 250);
+      }
+    }
+  }
+};
+
+
+
+
 
 
 </script>

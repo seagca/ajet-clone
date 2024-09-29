@@ -6,6 +6,9 @@
   </div>
 </template>
   
+
+
+
 <script>
 import AppHeader from './components/AppHeader.vue';
 import FlightSearch from './components/FlightSearch.vue';

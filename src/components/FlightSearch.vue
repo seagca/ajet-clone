@@ -623,8 +623,8 @@
                                       >person</span
                                     ><label
                                       >Passengers
-                                      <div>1 Passenger</div></label
-                                    >
+                                      <div>1 Passenger</div>
+                                    </label>
                                   </div> </span
                                 ><!---->
                                 <div
@@ -826,21 +826,14 @@
           >
             <div
               data-v-abe43e5f=""
-              class="swiper swiper-initialized swiper-horizontal carousel multi swiper-backface-hidden"
+              class="swiper swiper-initialized swiper-horizontal carousel multi"
             >
-              <div
-                class="swiper-wrapper"
-                style="
-                  transition-duration: 0ms;
-                  transform: translate3d(-692px, 0px, 0px);
-                  transition-delay: 0ms;
-                "
-              >
+              <div class="swiper-wrapper">
                 <div
                   data-v-abe43e5f=""
-                  class="swiper-slide swiper-slide-prev"
+                  class="swiper-slide swiper-slide-active"
                   data-swiper-slide-index="0"
-                  style="width: 692px"
+                  style="width: 346px"
                 >
                   <!---->
                   <div
@@ -903,9 +896,9 @@
                 </div>
                 <div
                   data-v-abe43e5f=""
-                  class="swiper-slide swiper-slide-active"
+                  class="swiper-slide swiper-slide-next"
                   data-swiper-slide-index="1"
-                  style="width: 692px"
+                  style="width: 346px"
                 >
                   <!---->
                   <div
@@ -968,9 +961,9 @@
                 </div>
                 <div
                   data-v-abe43e5f=""
-                  class="swiper-slide swiper-slide-next"
+                  class="swiper-slide"
                   data-swiper-slide-index="2"
-                  style="width: 692px"
+                  style="width: 346px"
                 >
                   <!---->
                   <div
@@ -1035,7 +1028,7 @@
                   data-v-abe43e5f=""
                   class="swiper-slide"
                   data-swiper-slide-index="3"
-                  style="width: 692px"
+                  style="width: 346px"
                 >
                   <!---->
                   <div
@@ -1097,54 +1090,12 @@
                   <!----><!----><!----><!----><!----><!---->
                 </div>
               </div>
-              <!----><!----><!---->
-              <div
-                data-v-5c1187bc=""
+              <!----><!----><!----><span
                 data-v-abe43e5f=""
-                class="slider-control controller"
-                style="--cfbe0776: center; --0a8cc1e8: 69px"
-              >
-                <div data-v-5c1187bc="" class="swp-nav">
-                  <div data-v-5c1187bc="" class="swp swp-prev">
-                    <img
-                      data-v-5c1187bc=""
-                      src="@/assets/chevron-left-ab39b75e.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div data-v-5c1187bc="" class="swp-paginate">
-                  <span data-v-5c1187bc="" class=""></span
-                  ><span data-v-5c1187bc="" class="active"></span
-                  ><span data-v-5c1187bc="" class=""></span>
-                </div>
-                <div data-v-5c1187bc="" class="swp-nav">
-                  <div data-v-5c1187bc="" class="swp swp-next">
-                    <img
-                      data-v-5c1187bc=""
-                      src="@/assets/chevron-right-b7eac6e0.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
+                class="hidden"
+              ></span>
             </div>
-            <div
-              data-v-abe43e5f=""
-              class="nav flex justify-content-between align-items-center"
-            >
-              <img
-                data-v-abe43e5f=""
-                class="prev"
-                src="@/assets/arrow-left-4e890973.svg"
-                alt=""
-              /><img
-                data-v-abe43e5f=""
-                class="next"
-                src="@/assets/arrow-right-255a83a7.svg"
-                alt=""
-              />
-            </div>
+            <!---->
           </div>
         </section>
       </div>
