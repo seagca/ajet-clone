@@ -55,147 +55,147 @@
       <div data-v-93c6af58="" class="submenu"><!----></div>
     </div>
     <div data-v-93c6af58="" class="top-banner-wrapper">
-      <div
+      <Swiper
+
+        :modules="[Navigation, Autoplay]"
+        :slides-per-view="1"
+        :loop="true"
+        :autoplay="{ delay: 3000 ,pauseOnMouseEnter: true}"
+        :navigation="{nextEl: '.swp-next', prevEl: '.swp-prev'}"
         data-v-500f2780=""
         data-v-93c6af58=""
-        class="swiper swiper-initialized swiper-horizontal top-banner top-banner-container text-xs md:text-sm xl:text-base active"
+        class="top-banner top-banner-container text-xs md:text-sm xl:text-base active"
       >
-        <div
-          class="swiper-wrapper"
-          style="
-            transition-duration: 0ms;
-            transform: translate3d(-4038px, 0px, 0px);
-            transition-delay: 0ms;
-          "
+      <swiper-slide
+      data-v-500f2780=""
+      style="width: 1346px"
+      ><a
+        data-v-500f2780=""
+        href="/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet"
+        class=""
+        ><span
+          data-v-500f2780=""
+          class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68"
+          style="color: rgb(0, 0, 0)"
         >
-          <div
-            data-v-500f2780=""
-            class="swiper-slide swiper-slide-next"
-            data-swiper-slide-index="2"
-            style="width: 1346px"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="20"
+            viewBox="0 0 16 20"
+            fill="none"
           >
-            <a
-              data-v-500f2780=""
-              href="/en/media/press-and-announcements/exclusive-lounges-welcome-ajet-passengers-in-domestic-flights"
-              class=""
-              ><span
-                data-v-500f2780=""
-                class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68"
-                style="color: rgb(0, 0, 0)"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="20"
-                  viewBox="0 0 16 20"
-                  fill="none"
-                >
-                  <path
-                    d="M8 0C3.8 0 0 3.27277 0 8.33439C0 11.5665 2.45 15.3678 7.34 19.7484C7.72 20.0839 8.29 20.0839 8.67 19.7484C13.55 15.3678 16 11.5665 16 8.33439C16 3.27277 12.2 0 8 0ZM6.23 10.8347L4.82 9.4016C4.43 9.00521 4.43 8.36488 4.82 7.96849C5.21 7.5721 5.84 7.5721 6.23 7.96849L6.94 8.69013L9.77 5.81375C10.16 5.41735 10.79 5.41735 11.18 5.81375C11.57 6.21014 11.57 6.85046 11.18 7.24686L7.64 10.8449C7.26 11.2311 6.62 11.2311 6.23 10.8347Z"
-                    fill="#008CFF"
-                  ></path>
-                </svg>
-                Exclusive lounges welcome AJet passengers in domestic flights!
-              </span></a
-            ><!---->
-          </div>
-          <div
-            data-v-500f2780=""
-            class="swiper-slide"
-            data-swiper-slide-index="3"
-            style="width: 1346px"
+            <path
+              d="M8 0C3.8 0 0 3.27277 0 8.33439C0 11.5665 2.45 15.3678 7.34 19.7484C7.72 20.0839 8.29 20.0839 8.67 19.7484C13.55 15.3678 16 11.5665 16 8.33439C16 3.27277 12.2 0 8 0ZM6.23 10.8347L4.82 9.4016C4.43 9.00521 4.43 8.36488 4.82 7.96849C5.21 7.5721 5.84 7.5721 6.23 7.96849L6.94 8.69013L9.77 5.81375C10.16 5.41735 10.79 5.41735 11.18 5.81375C11.57 6.21014 11.57 6.85046 11.18 7.24686L7.64 10.8449C7.26 11.2311 6.62 11.2311 6.23 10.8347Z"
+              fill="#008CFF"
+            ></path>
+          </svg>
+          Fly to Brand New Stories on 10 New Routes with AJet!
+        </span></a
+      >
+        
+
+
+
+
+
+      </swiper-slide>
+
+      <swiper-slide
+      data-v-500f2780=""
+      style="width: 1346px"
+      >
+      <a
+        data-v-500f2780=""
+        href="/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app"
+        class=""
+        ><span
+          data-v-500f2780=""
+          class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68"
+          style="color: rgb(0, 0, 0)"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="20"
+            viewBox="0 0 16 20"
+            fill="none"
           >
-            <a
-              data-v-500f2780=""
-              href="/en/media/press-and-announcements/extra-rights-given-to-passengers-due-to-events-affecting-our-lebanon-and-iraq-flight"
-              class=""
-              ><span
-                data-v-500f2780=""
-                class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68"
-                style="color: rgb(0, 0, 0)"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="20"
-                  viewBox="0 0 16 20"
-                  fill="none"
-                >
-                  <path
-                    d="M8 0C3.8 0 0 3.27277 0 8.33439C0 11.5665 2.45 15.3678 7.34 19.7484C7.72 20.0839 8.29 20.0839 8.67 19.7484C13.55 15.3678 16 11.5665 16 8.33439C16 3.27277 12.2 0 8 0ZM6.23 10.8347L4.82 9.4016C4.43 9.00521 4.43 8.36488 4.82 7.96849C5.21 7.5721 5.84 7.5721 6.23 7.96849L6.94 8.69013L9.77 5.81375C10.16 5.41735 10.79 5.41735 11.18 5.81375C11.57 6.21014 11.57 6.85046 11.18 7.24686L7.64 10.8449C7.26 11.2311 6.62 11.2311 6.23 10.8347Z"
-                    fill="#008CFF"
-                  ></path>
-                </svg>
-                Extra Rights Given To Passengers Due To Events Affecting Our
-                Lebanon And Iraq Flight
-              </span></a
-            ><!---->
-          </div>
-          <div
-            data-v-500f2780=""
-            class="swiper-slide swiper-slide-prev"
-            data-swiper-slide-index="0"
-            style="width: 1346px"
+            <path
+              d="M8 0C3.8 0 0 3.27277 0 8.33439C0 11.5665 2.45 15.3678 7.34 19.7484C7.72 20.0839 8.29 20.0839 8.67 19.7484C13.55 15.3678 16 11.5665 16 8.33439C16 3.27277 12.2 0 8 0ZM6.23 10.8347L4.82 9.4016C4.43 9.00521 4.43 8.36488 4.82 7.96849C5.21 7.5721 5.84 7.5721 6.23 7.96849L6.94 8.69013L9.77 5.81375C10.16 5.41735 10.79 5.41735 11.18 5.81375C11.57 6.21014 11.57 6.85046 11.18 7.24686L7.64 10.8449C7.26 11.2311 6.62 11.2311 6.23 10.8347Z"
+              fill="#008CFF"
+            ></path>
+          </svg>
+          Now, you can benefit from special discounts for disabled passengers,
+          veterans, and relatives of martyrs, through AJet.com and AJet Mobile
+          app!
+        </span></a
+      >
+    </swiper-slide>
+
+    <swiper-slide
+      data-v-500f2780=""
+      style="width: 1346px"
+      >
+       <a
+        data-v-500f2780=""
+        href="/en/media/press-and-announcements/exclusive-lounges-welcome-ajet-passengers-in-domestic-flights"
+        class=""
+        ><span
+          data-v-500f2780=""
+          class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68"
+          style="color: rgb(0, 0, 0)"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="20"
+            viewBox="0 0 16 20"
+            fill="none"
           >
-            <a
-              data-v-500f2780=""
-              href="/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet"
-              class=""
-              ><span
-                data-v-500f2780=""
-                class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68"
-                style="color: rgb(0, 0, 0)"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="20"
-                  viewBox="0 0 16 20"
-                  fill="none"
-                >
-                  <path
-                    d="M8 0C3.8 0 0 3.27277 0 8.33439C0 11.5665 2.45 15.3678 7.34 19.7484C7.72 20.0839 8.29 20.0839 8.67 19.7484C13.55 15.3678 16 11.5665 16 8.33439C16 3.27277 12.2 0 8 0ZM6.23 10.8347L4.82 9.4016C4.43 9.00521 4.43 8.36488 4.82 7.96849C5.21 7.5721 5.84 7.5721 6.23 7.96849L6.94 8.69013L9.77 5.81375C10.16 5.41735 10.79 5.41735 11.18 5.81375C11.57 6.21014 11.57 6.85046 11.18 7.24686L7.64 10.8449C7.26 11.2311 6.62 11.2311 6.23 10.8347Z"
-                    fill="#008CFF"
-                  ></path>
-                </svg>
-                Fly to Brand New Stories on 10 New Routes with AJet!
-              </span></a
-            ><!---->
-          </div>
-          <div
-            data-v-500f2780=""
-            class="swiper-slide swiper-slide-active"
-            data-swiper-slide-index="1"
-            style="width: 1346px"
+            <path
+              d="M8 0C3.8 0 0 3.27277 0 8.33439C0 11.5665 2.45 15.3678 7.34 19.7484C7.72 20.0839 8.29 20.0839 8.67 19.7484C13.55 15.3678 16 11.5665 16 8.33439C16 3.27277 12.2 0 8 0ZM6.23 10.8347L4.82 9.4016C4.43 9.00521 4.43 8.36488 4.82 7.96849C5.21 7.5721 5.84 7.5721 6.23 7.96849L6.94 8.69013L9.77 5.81375C10.16 5.41735 10.79 5.41735 11.18 5.81375C11.57 6.21014 11.57 6.85046 11.18 7.24686L7.64 10.8449C7.26 11.2311 6.62 11.2311 6.23 10.8347Z"
+              fill="#008CFF"
+            ></path>
+          </svg>
+          Exclusive lounges welcome AJet passengers in domestic flights!
+        </span></a
+      >
+    </swiper-slide>
+
+    <swiper-slide
+      data-v-500f2780=""
+      style="width: 1346px"
+      >
+      <a
+        data-v-500f2780=""
+        href="/en/media/press-and-announcements/extra-rights-given-to-passengers-due-to-events-affecting-our-lebanon-and-iraq-flight"
+        class=""
+        ><span
+          data-v-500f2780=""
+          class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68"
+          style="color: rgb(0, 0, 0)"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="20"
+            viewBox="0 0 16 20"
+            fill="none"
           >
-            <a
-              data-v-500f2780=""
-              href="/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app"
-              class=""
-              ><span
-                data-v-500f2780=""
-                class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68"
-                style="color: rgb(0, 0, 0)"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="20"
-                  viewBox="0 0 16 20"
-                  fill="none"
-                >
-                  <path
-                    d="M8 0C3.8 0 0 3.27277 0 8.33439C0 11.5665 2.45 15.3678 7.34 19.7484C7.72 20.0839 8.29 20.0839 8.67 19.7484C13.55 15.3678 16 11.5665 16 8.33439C16 3.27277 12.2 0 8 0ZM6.23 10.8347L4.82 9.4016C4.43 9.00521 4.43 8.36488 4.82 7.96849C5.21 7.5721 5.84 7.5721 6.23 7.96849L6.94 8.69013L9.77 5.81375C10.16 5.41735 10.79 5.41735 11.18 5.81375C11.57 6.21014 11.57 6.85046 11.18 7.24686L7.64 10.8449C7.26 11.2311 6.62 11.2311 6.23 10.8347Z"
-                    fill="#008CFF"
-                  ></path>
-                </svg>
-                Now, you can benefit from special discounts for disabled
-                passengers, veterans, and relatives of martyrs, through AJet.com
-                and AJet Mobile app!
-              </span></a
-            ><!---->
-          </div>
-        </div>
+            <path
+              d="M8 0C3.8 0 0 3.27277 0 8.33439C0 11.5665 2.45 15.3678 7.34 19.7484C7.72 20.0839 8.29 20.0839 8.67 19.7484C13.55 15.3678 16 11.5665 16 8.33439C16 3.27277 12.2 0 8 0ZM6.23 10.8347L4.82 9.4016C4.43 9.00521 4.43 8.36488 4.82 7.96849C5.21 7.5721 5.84 7.5721 6.23 7.96849L6.94 8.69013L9.77 5.81375C10.16 5.41735 10.79 5.41735 11.18 5.81375C11.57 6.21014 11.57 6.85046 11.18 7.24686L7.64 10.8449C7.26 11.2311 6.62 11.2311 6.23 10.8347Z"
+              fill="#008CFF"
+            ></path>
+          </svg>
+          Extra Rights Given To Passengers Due To Events Affecting Our Lebanon
+          And Iraq Flight
+        </span></a
+      >
+    </swiper-slide>
+
+
+      
         <!----><!----><!---->
         <div
           data-v-99e41b1c=""
@@ -217,7 +217,7 @@
             />
           </div>
         </div>
-      </div>
+      </Swiper>
       <div data-v-93c6af58="" class="close active" @click="closeBannerWrapper">
         <span data-v-93c6af58="" class="material-icons">cancel</span>
       </div>
@@ -266,7 +266,7 @@
         <div
           data-v-93c6af58=""
           class="language-select lang-select lg:flex hidden"
-          style="--2beacc2e: url(/src/assets/menu-lang-bg-n-d5cdc789.svg)"
+          style="--2beacc2e: url(/menu-lang-bg-n-d5cdc789.svg)"
         >
           <span class="hover-root"
             ><img src="@/assets/world-0909cfa7.svg" alt="" /><span class="lang"
@@ -285,7 +285,7 @@
             data-v-93c6af58=""
             id="_ajt_mobile_menu"
             class="mob-menu"
-            style="background-image: url('/src/assets/mob-menu-bg-e24ded0c.svg')"
+            style="background-image: url('/mob-menu-bg-e24ded0c.svg')"
           >
             <img
               data-v-93c6af58=""
@@ -431,10 +431,32 @@
 </template>
 
 
+
+<script setup>
+
+import {Swiper , SwiperSlide} from 'swiper/vue';
+import {Navigation , Autoplay , Pagination} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+</script>
+
+
 <script>
 
-export default {
 
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+      return {
+        modules: [Navigation, Pagination, Autoplay],
+      };
+    },
   
   methods: {
     closeBannerWrapper() {
