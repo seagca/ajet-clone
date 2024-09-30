@@ -23,8 +23,8 @@
     class="_ajt_large_container show-topbar"
     style="--22e0a771: 120px; --30596d21: 90px"
   >
-    <div data-v-93c6af58="" class="submenu-container" @mouseover="serviceOpen()" @mouseleave="serviceClose()">
-      <div data-v-93c6af58="" class="submenu">
+    <div data-v-93c6af58="" class="submenu-container" >
+      <div data-v-93c6af58="" class="submenu" @mouseover="serviceOpen()" @mouseleave="serviceClose()">
         <div data-v-93c6af58="" class="container">
           <div data-v-93c6af58="" class="sub-block">
             <h3 data-v-93c6af58="">Pre-Flight</h3>
@@ -230,7 +230,7 @@
             src="@/assets/ajet-logo-0d41a81e.svg"
             alt="AJet"
         /></a>
-        <div data-v-93c6af58="" class="menu-items">
+        <div data-v-93c6af58="" class="menu-items" >
           <span data-v-93c6af58="" class="item hidden lg:flex" @mouseover="serviceOpen()" @mouseleave="serviceClose()"
             ><a
               data-v-93c6af58=""
@@ -500,6 +500,7 @@ const serviceOpen = () => {
 const serviceClose = () => {
   const service = document.querySelector('.submenu-container[data-v-93c6af58]');
   service.classList.remove('active');
+  
 }
 
 const handleScroll = () => {
