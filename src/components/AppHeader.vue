@@ -64,7 +64,7 @@
         :navigation="{nextEl: '.swp-next', prevEl: '.swp-prev'}"
         data-v-500f2780=""
         data-v-93c6af58=""
-        class="top-banner top-banner-container text-xs md:text-sm xl:text-base active"
+        class="top-banner top-banner-container swiper-ios text-xs md:text-sm xl:text-base active"
       >
       <swiper-slide
       data-v-500f2780=""
