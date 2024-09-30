@@ -17,7 +17,7 @@
       ></path>
     </symbol>
   </svg>
-  <div data-v-834e9ed9="" class="header-fix" style="--39271329: 120px"></div>
+  <div data-v-834e9ed9="" class="header-fix" style="--22e0a771: 120px; --30596d21: 90px;"></div>
   <header
     data-v-93c6af58=""
     class="_ajt_large_container show-topbar"
@@ -474,8 +474,10 @@ export default {
 
       // Change the height using CSS variables
       if (headerFix && largeContainer) {
+        headerFix.style.setProperty('--30596d21', '40px');
         headerFix.style.setProperty('--39271329', '40px');
         largeContainer.style.setProperty('--22e0a771', '70px');
+        largeContainer.style.setProperty('--30596d21', '40px');
       }
       
       // Remove the top-banner-wrapper after a delay, if it exists
@@ -512,15 +514,18 @@ const handleScroll = () => {
 
   
   if (window.scrollY > 50) {
-    largeContainer.style.setProperty('--22e0a771', '70px');
-    headerFix.style.setProperty('--39271329', '70px');
-    activeElements.forEach(element => element.classList.remove('active'));
-    
+    if (headerFix && largeContainer && topBannerContainer) {
+      largeContainer.style.setProperty('--22e0a771', '70px');
+      headerFix.style.setProperty('--39271329', '70px');
+      activeElements.forEach(element => element.classList.remove('active'));
+    }
   } else {
-    topBannerContainer.classList.add('active');
-    closeBanner.classList.add('active');
-    largeContainer.style.setProperty('--22e0a771', '120px');
-    headerFix.style.setProperty('--39271329', '120px');
+    if (topBannerContainer) {
+      topBannerContainer.classList.add('active');
+      closeBanner.classList.add('active');
+      largeContainer.style.setProperty('--22e0a771', '120px');
+      headerFix.style.setProperty('--39271329', '120px');
+    }
   }
 };
 
