@@ -4,7 +4,7 @@
       <div class="footer-content grid grid-nogutter">
         <div class="col-12 md:col-3">
           <div class="flex flex-column gap-6 mb-32 md:mb-40">
-            <img src="/_ajt_theme/svg/footer-logo.svg" class="md:w-5 w-3" alt="" />
+            <img src="@/assets/footer-logo.svg" class="md:w-5 w-3" alt="" />
           </div>
           <div class="flex gap-7">
             <div class="flex flex-column gap-3 mt-15">

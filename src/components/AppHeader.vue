@@ -262,7 +262,7 @@
         <div
           data-v-93c6af58=""
           class="language-select lang-select lg:flex hidden"
-          style="--2beacc2e: url(/menu-lang-bg-n-d5cdc789.svg)"
+          style="--2beacc2e: url(/ajet-clone/menu-lang-bg-n-d5cdc789.svg)"
         >
           <span class="hover-root"
             ><img src="@/assets/world-0909cfa7.svg" alt="" /><span class="lang"
@@ -281,7 +281,7 @@
             data-v-93c6af58=""
             id="_ajt_mobile_menu"
             class="mob-menu"
-            style="background-image: url('/mob-menu-bg-e24ded0c.svg')"
+            style="background-image: url(/ajet-clone/mob-menu-bg-e24ded0c.svg)"
           >
             <img
               data-v-93c6af58=""
@@ -300,7 +300,7 @@
                 <div
                   data-v-93c6af58=""
                   class="language-select lang-select lg:flex"
-                  style="--2beacc2e: url(/menu-lang-bg-n-d5cdc789.svg)"
+                  style="--2beacc2e: url(/ajet-clone/menu-lang-bg-n-d5cdc789.svg)"
                 >
                   <span class="hover-root"
                     ><img src="@/assets/world-0909cfa7.svg" alt="" /><span

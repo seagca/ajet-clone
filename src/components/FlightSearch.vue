@@ -25,9 +25,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(/20240928/EN/350x235.jpg);
-                --d93e49d0: url(/20240928/EN/570x330.jpg);
-                --ac9df3dc: url(/20240928/EN/1900x640.jpg);
+                --ef97a558: url(/ajet-clone/20240928/EN/350x235.jpg);
+                --d93e49d0: url(/ajet-clone/20240928/EN/570x330.jpg);
+                --ac9df3dc: url(/ajet-clone/20240928/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
@@ -45,9 +45,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(/20240929/EN/350x235.jpg);
-                --d93e49d0: url(/20240929/EN/570x330.jpg);
-                --ac9df3dc: url(/20240929/EN/1900x640.jpg);
+                --ef97a558: url(/ajet/clone/20240929/EN/350x235.jpg);
+                --d93e49d0: url(/ajet-clone/20240929/EN/570x330.jpg);
+                --ac9df3dc: url(/ajet-clone/20240929/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
@@ -65,9 +65,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(/20240911/EN/350x235.jpg);
-                --d93e49d0: url(/20240911/EN/570x330.jpg);
-                --ac9df3dc: url(/20240911/EN/1900x640.jpg);
+                --ef97a558: url(/ajet-clone/20240911/EN/350x235.jpg);
+                --d93e49d0: url(/ajet-clone/20240911/EN/570x330.jpg);
+                --ac9df3dc: url(/ajet-clone/20240911/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
@@ -86,9 +86,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(/20240813/EN/350x235.jpg);
-                --d93e49d0: url(/20240813/EN/570x330.jpg);
-                --ac9df3dc: url(/20240813/EN/1900x640.jpg);
+                --ef97a558: url(/ajet-clone/20240813/EN/350x235.jpg);
+                --d93e49d0: url(/ajet-clone/20240813/EN/570x330.jpg);
+                --ac9df3dc: url(/ajet-clone/20240813/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
@@ -827,7 +827,7 @@
                     data-v-abe43e5f=""
                     class="slide"
                     style="
-                      --55b64b8c: url(/trabzon.webp);
+                      --55b64b8c: url(/ajet-clone/trabzon.webp);
                     "
                   >
                     <a
@@ -892,7 +892,7 @@
                     data-v-abe43e5f=""
                     class="slide"
                     style="
-                      --55b64b8c: url(/erzurum.webp);
+                      --55b64b8c: url(/ajet-clone/erzurum.webp);
                     "
                   >
                     <a
@@ -957,7 +957,7 @@
                     data-v-abe43e5f=""
                     class="slide"
                     style="
-                      --55b64b8c: url(/adana.webp);
+                      --55b64b8c: url(/ajet-clone/adana.webp);
                     "
                   >
                     <a
@@ -1022,7 +1022,7 @@
                     data-v-abe43e5f=""
                     class="slide"
                     style="
-                      --55b64b8c: url(/bodrum.webp);
+                      --55b64b8c: url(/ajet-clone/bodrum.webp);
                     "
                   >
                     <a
