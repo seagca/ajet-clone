@@ -1,0 +1,979 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="apple-touch-icon" href="./src/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>AJet - Home Page</title><style>.lottie-animation-container {
+      width: var(--lottie-animation-container-width);
+      height: var(--lottie-animation-container-height);
+      background-color: var(--lottie-animation-container-background-color);
+      overflow: hidden;
+      margin: var(--lottie-animation-margin)
+    }
+  
+    .lottie-animation-container svg {
+      transform: scale(var(--lottie-animation-scale))
+    }</style><style data-primevue-style-id="base">.p-hidden-accessible {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  
+    .p-hidden-accessible input,
+    .p-hidden-accessible select {
+      transform: scale(0);
+    }
+  
+    .p-overflow-hidden {
+      overflow: hidden;
+      padding-right: var(--scrollbar-width);
+    }</style><style data-primevue-style-id="ripple">@keyframes ripple {
+      100% {
+        opacity: 0;
+        transform: scale(2.5);
+      }
+    }
+  
+    @layer primevue {
+      .p-ripple {
+        overflow: hidden;
+        position: relative;
+      }
+  
+      .p-ink {
+        display: block;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 100%;
+        transform: scale(0);
+        pointer-events: none;
+      }
+  
+      .p-ink-active {
+        animation: ripple 0.4s linear;
+      }
+  
+      .p-ripple-disabled .p-ink {
+        display: none;
+      }
+    }</style><style data-primevue-style-id="common">@layer primevue {
+  
+      .p-component,
+      .p-component * {
+        box-sizing: border-box;
+      }
+  
+      .p-hidden-space {
+        visibility: hidden;
+      }
+  
+      .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+      }
+  
+      .p-disabled,
+      .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+      }
+  
+      .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+  
+      .p-unselectable-text {
+        user-select: none;
+      }
+  
+      .p-sr-only {
+        border: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        word-wrap: normal;
+      }
+  
+      .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+      }
+  
+      .p-link:disabled {
+        cursor: default;
+      }
+  
+      /* Non vue overlay animations */
+      .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+      }
+  
+      .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+  
+      .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+      }
+  
+      /* Vue based overlay animations */
+      .p-connected-overlay-enter-from {
+        opacity: 0;
+        transform: scaleY(0.8);
+      }
+  
+      .p-connected-overlay-leave-to {
+        opacity: 0;
+      }
+  
+      .p-connected-overlay-enter-active {
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+      }
+  
+      .p-connected-overlay-leave-active {
+        transition: opacity .1s linear;
+      }
+  
+      /* Toggleable Content */
+      .p-toggleable-content-enter-from,
+      .p-toggleable-content-leave-to {
+        max-height: 0;
+      }
+  
+      .p-toggleable-content-enter-to,
+      .p-toggleable-content-leave-from {
+        max-height: 1000px;
+      }
+  
+      .p-toggleable-content-leave-active {
+        overflow: hidden;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+      }
+  
+      .p-toggleable-content-enter-active {
+        overflow: hidden;
+        transition: max-height 1s ease-in-out;
+      }
+  
+      .p-button {
+        display: inline-flex;
+        cursor: pointer;
+        user-select: none;
+        align-items: center;
+        vertical-align: bottom;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      .p-button-label {
+        flex: 1 1 auto;
+      }
+  
+      .p-button-icon-right {
+        order: 1;
+      }
+  
+      .p-button:disabled {
+        cursor: default;
+      }
+  
+      .p-button-icon-only {
+        justify-content: center;
+      }
+  
+      .p-button-icon-only .p-button-label {
+        visibility: hidden;
+        width: 0;
+        flex: 0 0 auto;
+      }
+  
+      .p-button-vertical {
+        flex-direction: column;
+      }
+  
+      .p-button-icon-bottom {
+        order: 2;
+      }
+  
+      .p-buttonset .p-button {
+        margin: 0;
+      }
+  
+      .p-buttonset .p-button:not(:last-child),
+      .p-buttonset .p-button:not(:last-child):hover {
+        border-right: 0 none;
+      }
+  
+      .p-buttonset .p-button:not(:first-of-type):not(:last-of-type) {
+        border-radius: 0;
+      }
+  
+      .p-buttonset .p-button:first-of-type:not(:only-of-type) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+  
+      .p-buttonset .p-button:last-of-type:not(:only-of-type) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+  
+      .p-buttonset .p-button:focus {
+        position: relative;
+        z-index: 1;
+      }
+  
+  
+      .p-checkbox {
+        display: inline-flex;
+        cursor: pointer;
+        user-select: none;
+        vertical-align: bottom;
+        position: relative;
+      }
+  
+      .p-checkbox.p-checkbox-disabled {
+        cursor: default;
+      }
+  
+      .p-checkbox-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+  
+      .p-fluid .p-inputtext {
+        width: 100%;
+      }
+  
+      /* InputGroup */
+      .p-inputgroup {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+      }
+  
+      .p-inputgroup-addon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .p-inputgroup .p-float-label {
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+      }
+  
+      .p-inputgroup .p-inputtext,
+      .p-fluid .p-inputgroup .p-inputtext,
+      .p-inputgroup .p-inputwrapper,
+      .p-fluid .p-inputgroup .p-input {
+        flex: 1 1 auto;
+        width: 1%;
+      }
+  
+      /* Floating Label */
+      .p-float-label {
+        display: block;
+        position: relative;
+      }
+  
+      .p-float-label label {
+        position: absolute;
+        pointer-events: none;
+        top: 50%;
+        margin-top: -.5rem;
+        transition-property: all;
+        transition-timing-function: ease;
+        line-height: 1;
+      }
+  
+      .p-float-label textarea~label {
+        top: 1rem;
+      }
+  
+      .p-float-label input:focus~label,
+      .p-float-label input.p-filled~label,
+      .p-float-label input:-webkit-autofill~label,
+      .p-float-label textarea:focus~label,
+      .p-float-label textarea.p-filled~label,
+      .p-float-label .p-inputwrapper-focus~label,
+      .p-float-label .p-inputwrapper-filled~label {
+        top: -.75rem;
+        font-size: 12px;
+      }
+  
+  
+      .p-float-label .p-placeholder,
+      .p-float-label input::placeholder,
+      .p-float-label .p-inputtext::placeholder {
+        opacity: 0;
+        transition-property: all;
+        transition-timing-function: ease;
+      }
+  
+      .p-float-label .p-focus .p-placeholder,
+      .p-float-label input:focus::placeholder,
+      .p-float-label .p-inputtext:focus::placeholder {
+        opacity: 1;
+        transition-property: all;
+        transition-timing-function: ease;
+      }
+  
+      .p-input-icon-left,
+      .p-input-icon-right {
+        position: relative;
+        display: inline-block;
+      }
+  
+      .p-input-icon-left>i,
+      .p-input-icon-left>svg,
+      .p-input-icon-right>i,
+      .p-input-icon-right>svg {
+        position: absolute;
+        top: 50%;
+        margin-top: -.5rem;
+      }
+  
+      .p-fluid .p-input-icon-left,
+      .p-fluid .p-input-icon-right {
+        display: block;
+        width: 100%;
+      }
+  
+  
+      .p-radiobutton {
+        position: relative;
+        display: inline-flex;
+        cursor: pointer;
+        user-select: none;
+        vertical-align: bottom;
+      }
+  
+      .p-radiobutton.p-radiobutton-disabled {
+        cursor: default;
+      }
+  
+      .p-radiobutton-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .p-radiobutton-icon {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform: translateZ(0) scale(.1);
+        border-radius: 50%;
+        visibility: hidden;
+      }
+  
+      .p-radiobutton-box.p-highlight .p-radiobutton-icon {
+        transform: translateZ(0) scale(1.0, 1.0);
+        visibility: visible;
+      }
+  
+    }</style><style data-primevue-style-id="overlaypanel">@layer primevue {
+      .p-overlaypanel {
+        margin-top: 10px;
+      }
+  
+      .p-overlaypanel-flipped {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+  
+      .p-overlaypanel-close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      /* Animation */
+      .p-overlaypanel-enter-from {
+        opacity: 0;
+        transform: scaleY(0.8);
+      }
+  
+      .p-overlaypanel-leave-to {
+        opacity: 0;
+      }
+  
+      .p-overlaypanel-enter-active {
+        transition: transform 0.12s cubic-bezier(0, 0, 0.2, 1), opacity 0.12s cubic-bezier(0, 0, 0.2, 1);
+      }
+  
+      .p-overlaypanel-leave-active {
+        transition: opacity 0.1s linear;
+      }
+  
+      .p-overlaypanel:after,
+      .p-overlaypanel:before {
+        bottom: 100%;
+        left: calc(var(--overlayArrowLeft, 0) + 1.25rem);
+        content: ' ';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+  
+      .p-overlaypanel:after {
+        border-width: 8px;
+        margin-left: -8px;
+      }
+  
+      .p-overlaypanel:before {
+        border-width: 10px;
+        margin-left: -10px;
+      }
+  
+      .p-overlaypanel-flipped:after,
+      .p-overlaypanel-flipped:before {
+        bottom: auto;
+        top: 100%;
+      }
+  
+      .p-overlaypanel.p-overlaypanel-flipped:after {
+        border-bottom-color: transparent;
+      }
+  
+      .p-overlaypanel.p-overlaypanel-flipped:before {
+        border-bottom-color: transparent;
+      }
+    }</style><style>@media screen and (max-width: 767px) {
+      .p-overlaypanel[pv_id_1] {
+        width: auto !important;
+      }
+    }</style><style>@media screen and (max-width: 991px) {
+      .p-overlaypanel[pv_id_2] {
+        width: auto !important;
+      }
+    }
+  
+    @media screen and (max-width: 767px) {
+      .p-overlaypanel[pv_id_2] {
+        width: 382px !important;
+      }
+    }
+  
+    @media screen and (max-width: 575px) {
+      .p-overlaypanel[pv_id_2] {
+        width: auto !important;
+      }
+    }</style><style data-primevue-style-id="toast">@layer primevue {
+      .p-toast {
+        width: 25rem;
+        white-space: pre-line;
+        word-break: break-word;
+      }
+  
+      .p-toast-message-icon {
+        flex-shrink: 0;
+      }
+  
+      .p-toast-message-content {
+        display: flex;
+        align-items: flex-start;
+      }
+  
+      .p-toast-message-text {
+        flex: 1 1 auto;
+      }
+  
+      .p-toast-top-center {
+        transform: translateX(-50%);
+      }
+  
+      .p-toast-bottom-center {
+        transform: translateX(-50%);
+      }
+  
+      .p-toast-center {
+        min-width: 20vw;
+        transform: translate(-50%, -50%);
+      }
+  
+      .p-toast-icon-close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      .p-toast-icon-close.p-link {
+        cursor: pointer;
+      }
+  
+      /* Animations */
+      .p-toast-message-enter-from {
+        opacity: 0;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+      }
+  
+      .p-toast-message-leave-from {
+        max-height: 1000px;
+      }
+  
+      .p-toast .p-toast-message.p-toast-message-leave-to {
+        max-height: 0;
+        opacity: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+      }
+  
+      .p-toast-message-enter-active {
+        -webkit-transition: transform 0.3s, opacity 0.3s;
+        transition: transform 0.3s, opacity 0.3s;
+      }
+  
+      .p-toast-message-leave-active {
+        -webkit-transition: max-height 0.45s cubic-bezier(0, 1, 0, 1), opacity 0.3s, margin-bottom 0.3s;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1), opacity 0.3s, margin-bottom 0.3s;
+      }
+    }</style><style data-primevue-style-id="dialog">@layer primevue {
+      .p-dialog-mask.p-component-overlay {
+        pointer-events: auto;
+      }
+  
+      .p-dialog {
+        max-height: 90%;
+        transform: scale(1);
+      }
+  
+      .p-dialog-content {
+        overflow-y: auto;
+      }
+  
+      .p-dialog-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+      }
+  
+      .p-dialog-footer {
+        flex-shrink: 0;
+      }
+  
+      .p-dialog .p-dialog-header-icons {
+        display: flex;
+        align-items: center;
+      }
+  
+      .p-dialog .p-dialog-header-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      /* Fluid */
+      .p-fluid .p-dialog-footer .p-button {
+        width: auto;
+      }
+  
+      /* Animation */
+      /* Center */
+      .p-dialog-enter-active {
+        transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+      }
+  
+      .p-dialog-leave-active {
+        transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+  
+      .p-dialog-enter-from,
+      .p-dialog-leave-to {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+  
+      /* Top, Bottom, Left, Right, Top* and Bottom* */
+      .p-dialog-top .p-dialog,
+      .p-dialog-bottom .p-dialog,
+      .p-dialog-left .p-dialog,
+      .p-dialog-right .p-dialog,
+      .p-dialog-topleft .p-dialog,
+      .p-dialog-topright .p-dialog,
+      .p-dialog-bottomleft .p-dialog,
+      .p-dialog-bottomright .p-dialog {
+        margin: 0.75rem;
+        transform: translate3d(0px, 0px, 0px);
+      }
+  
+      .p-dialog-top .p-dialog-enter-active,
+      .p-dialog-top .p-dialog-leave-active,
+      .p-dialog-bottom .p-dialog-enter-active,
+      .p-dialog-bottom .p-dialog-leave-active,
+      .p-dialog-left .p-dialog-enter-active,
+      .p-dialog-left .p-dialog-leave-active,
+      .p-dialog-right .p-dialog-enter-active,
+      .p-dialog-right .p-dialog-leave-active,
+      .p-dialog-topleft .p-dialog-enter-active,
+      .p-dialog-topleft .p-dialog-leave-active,
+      .p-dialog-topright .p-dialog-enter-active,
+      .p-dialog-topright .p-dialog-leave-active,
+      .p-dialog-bottomleft .p-dialog-enter-active,
+      .p-dialog-bottomleft .p-dialog-leave-active,
+      .p-dialog-bottomright .p-dialog-enter-active,
+      .p-dialog-bottomright .p-dialog-leave-active {
+        transition: all 0.3s ease-out;
+      }
+  
+      .p-dialog-top .p-dialog-enter-from,
+      .p-dialog-top .p-dialog-leave-to {
+        transform: translate3d(0px, -100%, 0px);
+      }
+  
+      .p-dialog-bottom .p-dialog-enter-from,
+      .p-dialog-bottom .p-dialog-leave-to {
+        transform: translate3d(0px, 100%, 0px);
+      }
+  
+      .p-dialog-left .p-dialog-enter-from,
+      .p-dialog-left .p-dialog-leave-to,
+      .p-dialog-topleft .p-dialog-enter-from,
+      .p-dialog-topleft .p-dialog-leave-to,
+      .p-dialog-bottomleft .p-dialog-enter-from,
+      .p-dialog-bottomleft .p-dialog-leave-to {
+        transform: translate3d(-100%, 0px, 0px);
+      }
+  
+      .p-dialog-right .p-dialog-enter-from,
+      .p-dialog-right .p-dialog-leave-to,
+      .p-dialog-topright .p-dialog-enter-from,
+      .p-dialog-topright .p-dialog-leave-to,
+      .p-dialog-bottomright .p-dialog-enter-from,
+      .p-dialog-bottomright .p-dialog-leave-to {
+        transform: translate3d(100%, 0px, 0px);
+      }
+  
+      /* Maximize */
+      .p-dialog-maximized {
+        -webkit-transition: none;
+        transition: none;
+        transform: none;
+        width: 100vw !important;
+        height: 100vh !important;
+        top: 0px;
+        left: 0px;
+        max-height: 100%;
+        height: 100%;
+      }
+  
+      .p-dialog-maximized .p-dialog-content {
+        flex-grow: 1;
+      }
+  
+      .p-confirm-dialog .p-dialog-content {
+        display: flex;
+        align-items: center;
+      }
+    }</style><style data-primevue-style-id="baseicon">.p-icon {
+      display: inline-block;
+    }
+  
+    .p-icon-spin {
+      -webkit-animation: p-icon-spin 2s infinite linear;
+      animation: p-icon-spin 2s infinite linear;
+    }
+  
+    @-webkit-keyframes p-icon-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+  
+      100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    }
+  
+    @keyframes p-icon-spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+  
+      100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+      }
+    }</style><style data-primevue-style-id="dropdown">@layer primevue {
+      .p-dropdown {
+        display: inline-flex;
+        cursor: pointer;
+        position: relative;
+        user-select: none;
+      }
+  
+      .p-dropdown-clear-icon {
+        position: absolute;
+        top: 50%;
+        margin-top: -0.5rem;
+      }
+  
+      .p-dropdown-trigger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+  
+      .p-dropdown-label {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        flex: 1 1 auto;
+        width: 1%;
+        text-overflow: ellipsis;
+        cursor: pointer;
+      }
+  
+      .p-dropdown-label-empty {
+        overflow: hidden;
+        opacity: 0;
+      }
+  
+      input.p-dropdown-label {
+        cursor: default;
+      }
+  
+      .p-dropdown .p-dropdown-panel {
+        min-width: 100%;
+      }
+  
+      .p-dropdown-panel {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+  
+      .p-dropdown-items-wrapper {
+        overflow: auto;
+      }
+  
+      .p-dropdown-item {
+        cursor: pointer;
+        font-weight: normal;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+      }
+  
+      .p-dropdown-item-group {
+        cursor: auto;
+      }
+  
+      .p-dropdown-items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+  
+      .p-dropdown-filter {
+        width: 100%;
+      }
+  
+      .p-dropdown-filter-container {
+        position: relative;
+      }
+  
+      .p-dropdown-filter-icon {
+        position: absolute;
+        top: 50%;
+        margin-top: -0.5rem;
+      }
+  
+      .p-fluid .p-dropdown {
+        display: flex;
+      }
+  
+      .p-fluid .p-dropdown .p-dropdown-label {
+        width: 1%;
+      }
+    }</style><style data-primevue-style-id="tabview">@layer primevue {
+      .p-tabview-nav-container {
+        position: relative;
+      }
+  
+      .p-tabview-scrollable .p-tabview-nav-container {
+        overflow: hidden;
+      }
+  
+      .p-tabview-nav-content {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        overscroll-behavior: contain auto;
+      }
+  
+      .p-tabview-nav {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        flex: 1 1 auto;
+      }
+  
+      .p-tabview-header-action {
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+      }
+  
+      .p-tabview-ink-bar {
+        display: none;
+        z-index: 1;
+      }
+  
+      .p-tabview-header-action:focus {
+        z-index: 1;
+      }
+  
+      .p-tabview-title {
+        line-height: 1;
+        white-space: nowrap;
+      }
+  
+      .p-tabview-nav-btn {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .p-tabview-nav-prev {
+        left: 0;
+      }
+  
+      .p-tabview-nav-next {
+        right: 0;
+      }
+  
+      .p-tabview-nav-content::-webkit-scrollbar {
+        display: none;
+      }
+    }</style><style data-primevue-style-id="accordion">@layer primevue {
+      .p-accordion-header-action {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        user-select: none;
+        position: relative;
+        text-decoration: none;
+      }
+  
+      .p-accordion-header-action:focus {
+        z-index: 1;
+      }
+  
+      .p-accordion-header-text {
+        line-height: 1;
+      }
+    }</style><style data-primevue-style-id="divider">@layer primevue {
+      .p-divider-horizontal {
+        display: flex;
+        width: 100%;
+        position: relative;
+        align-items: center;
+      }
+  
+      .p-divider-horizontal:before {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        content: '';
+      }
+  
+      .p-divider-content {
+        z-index: 1;
+      }
+  
+      .p-divider-vertical {
+        min-height: 100%;
+        margin: 0 1rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+  
+      .p-divider-vertical:before {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        content: '';
+      }
+  
+      .p-divider-solid.p-divider-horizontal:before {
+        border-top-style: solid;
+      }
+  
+      .p-divider-solid.p-divider-vertical:before {
+        border-left-style: solid;
+      }
+  
+      .p-divider-dashed.p-divider-horizontal:before {
+        border-top-style: dashed;
+      }
+  
+      .p-divider-dashed.p-divider-vertical:before {
+        border-left-style: dashed;
+      }
+  
+      .p-divider-dotted.p-divider-horizontal:before {
+        border-top-style: dotted;
+      }
+  
+      .p-divider-dotted.p-divider-vertical:before {
+        border-left-style: dotted;
+      }
+    }</style><script defer="defer" src="/ajet-clone/js/chunk-vendors.d07cf8fc.js"></script><script defer="defer" src="/ajet-clone/js/app.3b62b2d1.js"></script><link href="/ajet-clone/css/app.5ef5a613.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but ajet-clone doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
