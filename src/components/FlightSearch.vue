@@ -25,9 +25,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(@/20240928/EN/350x235.jpg);
-                --d93e49d0: url(@/20240928/EN/570x330.jpg);
-                --ac9df3dc: url(@/20240928/EN/1900x640.jpg);
+                --ef97a558: url(/20240928/EN/350x235.jpg);
+                --d93e49d0: url(/20240928/EN/570x330.jpg);
+                --ac9df3dc: url(/20240928/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
@@ -45,9 +45,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(@/20240929/EN/350x235.jpg);
-                --d93e49d0: url(@/20240929/EN/570x330.jpg);
-                --ac9df3dc: url(@/20240929/EN/1900x640.jpg);
+                --ef97a558: url(/20240929/EN/350x235.jpg);
+                --d93e49d0: url(/20240929/EN/570x330.jpg);
+                --ac9df3dc: url(/20240929/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
@@ -65,9 +65,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(@/20240911/EN/350x235.jpg);
-                --d93e49d0: url(@/20240911/EN/570x330.jpg);
-                --ac9df3dc: url(@/20240911/EN/1900x640.jpg);
+                --ef97a558: url(/20240911/EN/350x235.jpg);
+                --d93e49d0: url(/20240911/EN/570x330.jpg);
+                --ac9df3dc: url(/20240911/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
@@ -86,9 +86,9 @@
               data-v-9cb3d8ec=""
               class="slide has-rights"
               style="
-                --ef97a558: url(@/20240813/EN/350x235.jpg);
-                --d93e49d0: url(@/20240813/EN/570x330.jpg);
-                --ac9df3dc: url(@/20240813/EN/1900x640.jpg);
+                --ef97a558: url(/20240813/EN/350x235.jpg);
+                --d93e49d0: url(/20240813/EN/570x330.jpg);
+                --ac9df3dc: url(/20240813/EN/1900x640.jpg);
               "
             ></div> </a
           ><!---->
