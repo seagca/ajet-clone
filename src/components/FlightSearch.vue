@@ -24,7 +24,7 @@
             <div
               data-v-a9e7a9f6=""
               data-v-9cb3d8ec=""
-              class="slide has-rights"
+              class=" has-rights"
               style="
                 --ef97a558: url(/20240928/EN/350x235.jpg);
                 --d93e49d0: url(/20240928/EN/570x330.jpg);
