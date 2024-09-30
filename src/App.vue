@@ -49,6 +49,7 @@ export default {
 @import './assets/NewsSlide-27d1b51d.css';
 @import './assets/CampaignSlide-55b15173.css';
 @import './assets/Carousel-0277abb9.css';
+@import './assets/index-f3370e38.css';
 @import './assets/HomePage-b8daaf08.css';
 /*@import './assets/inline-13.css';
 @import './assets/inline-8.css';
@@ -56,7 +57,6 @@ export default {
 @import './assets/inline-10.css';
 @import './assets/inline-11.css';*/
 @import './assets/0YUBlY.css';
-@import './assets/index-f3370e38.css';
 
 
 
