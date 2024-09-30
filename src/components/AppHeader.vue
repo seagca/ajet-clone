@@ -23,7 +23,7 @@
     class="_ajt_large_container show-topbar"
     style="--22e0a771: 120px; --30596d21: 90px"
   >
-    <div data-v-93c6af58="" class="submenu-container">
+    <div data-v-93c6af58="" class="submenu-container" @mouseover="serviceOpen()" @mouseleave="serviceClose()">
       <div data-v-93c6af58="" class="submenu">
         <div data-v-93c6af58="" class="container">
           <div data-v-93c6af58="" class="sub-block">
@@ -58,7 +58,7 @@
       <Swiper
 
         :modules="[Navigation, Autoplay]"
-        :slides-per-view="1"
+        :slides-per-view="auto"
         :loop="true"
         :autoplay="{ delay: 3000 ,pauseOnMouseEnter: true}"
         :navigation="{nextEl: '.swp-next', prevEl: '.swp-prev'}"
@@ -68,7 +68,6 @@
       >
       <swiper-slide
       data-v-500f2780=""
-      style="width: 1346px"
       ><a
         data-v-500f2780=""
         href="/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet"
@@ -103,7 +102,6 @@
 
       <swiper-slide
       data-v-500f2780=""
-      style="width: 1346px"
       >
       <a
         data-v-500f2780=""
@@ -135,7 +133,6 @@
 
     <swiper-slide
       data-v-500f2780=""
-      style="width: 1346px"
       >
        <a
         data-v-500f2780=""
@@ -165,7 +162,6 @@
 
     <swiper-slide
       data-v-500f2780=""
-      style="width: 1346px"
       >
       <a
         data-v-500f2780=""
@@ -235,7 +231,7 @@
             alt="AJet"
         /></a>
         <div data-v-93c6af58="" class="menu-items">
-          <span data-v-93c6af58="" class="item hidden lg:flex"
+          <span data-v-93c6af58="" class="item hidden lg:flex" @mouseover="serviceOpen()" @mouseleave="serviceClose()"
             ><a
               data-v-93c6af58=""
               href="/en/services"
@@ -418,6 +414,7 @@
               type="button"
               data-pc-name="button"
               data-pc-section="root"
+              @click=" handleLogin()"
             >
               <span class="hidden md:inline mr-8">Login</span
               ><span class="material-icons md-20">login</span>
@@ -433,12 +430,16 @@
 
 
 <script setup>
-
+import { onMounted } from 'vue';
 import {Swiper , SwiperSlide} from 'swiper/vue';
 import {Navigation , Autoplay , Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
 
 </script>
 
@@ -459,18 +460,21 @@ export default {
     },
   
   methods: {
+
+
+
     closeBannerWrapper() {
-      // Select active elements
       const activeElements = document.querySelectorAll('.active[data-v-93c6af58]');
       const headerFix = document.querySelector('.header-fix');
       const largeContainer = document.querySelector('._ajt_large_container');
+      // Select active elements
       
       // Remove the "active" class from all active elements
       activeElements.forEach(element => element.classList.remove("active"));
 
       // Change the height using CSS variables
       if (headerFix && largeContainer) {
-        headerFix.style.setProperty('--39271329', '70px');
+        headerFix.style.setProperty('--39271329', '40px');
         largeContainer.style.setProperty('--22e0a771', '70px');
       }
       
@@ -484,8 +488,44 @@ export default {
 };
 
 
+const handleLogin = () => {
+  alert('You have successfully logged in!');  
+}
+
+
+const serviceOpen = () => {
+  const service = document.querySelector('.submenu-container[data-v-93c6af58]');
+  service.classList.add('active');
+}
+const serviceClose = () => {
+  const service = document.querySelector('.submenu-container[data-v-93c6af58]');
+  service.classList.remove('active');
+}
+
+const handleScroll = () => {
+  const largeContainer = document.querySelector('._ajt_large_container');
+  const headerFix = document.querySelector('.header-fix');
+  const topBannerContainer = document.querySelector('.top-banner-container');
+  const closeBanner = document.querySelector('.close[data-v-93c6af58]');
+  const activeElements = document.querySelectorAll('.active[data-v-93c6af58]');
+
+  
+  if (window.scrollY > 50) {
+    largeContainer.style.setProperty('--22e0a771', '70px');
+    headerFix.style.setProperty('--39271329', '70px');
+    activeElements.forEach(element => element.classList.remove('active'));
+    
+  } else {
+    topBannerContainer.classList.add('active');
+    closeBanner.classList.add('active');
+    largeContainer.style.setProperty('--22e0a771', '120px');
+    headerFix.style.setProperty('--39271329', '120px');
+  }
+};
+
 
 
 
 
 </script>
+

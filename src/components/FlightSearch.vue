@@ -1,23 +1,21 @@
 <template>
   <div class="_ajt_large_container home-page">
-    <div
+    <Swiper
+      :modules="[Navigation, Pagination, Autoplay]"
+      :slides-per-view="auto"
+      :loop="false"
+      :autoplay="{ delay: 5000 }"
+      :navigation = "{nextEl: '.swp-next', prevEl: '.swp-prev'}"
+      :pagination = "{el: '.swp-paginate', clickable: true}"
       data-v-9cb3d8ec=""
-      class="swiper swiper-initialized swiper-horizontal main-slider swiper-backface-hidden"
+      class="main-slider "
+    
+    
     >
-      <div
-        class="swiper-wrapper"
-        style="
-          transform: translate3d(-3840px, 0px, 0px);
-          transition-duration: 0ms;
-          transition-delay: 0ms;
-        "
-      >
-        <div
-          data-v-9cb3d8ec=""
-          class="swiper-slide"
-          data-swiper-slide-index="0"
-          style="width: 1920px"
-        >
+      
+    
+    <swiper-slide data-v-9cb3d8ec="">
+      
           <a
             data-v-9cb3d8ec=""
             href="/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet"
@@ -26,7 +24,7 @@
             <div
               data-v-a9e7a9f6=""
               data-v-9cb3d8ec=""
-              class="slide has-rights"
+              class=" has-rights"
               style="
                 --ef97a558: url(/20240928/EN/350x235.jpg);
                 --d93e49d0: url(/20240928/EN/570x330.jpg);
@@ -34,13 +32,10 @@
               "
             ></div> </a
           ><!---->
-        </div>
-        <div
-          data-v-9cb3d8ec=""
-          class="swiper-slide swiper-slide-prev"
-          data-swiper-slide-index="1"
-          style="width: 1920px"
-        >
+        
+    </swiper-slide>
+    <swiper-slide data-v-9cb3d8ec="">
+      
           <a
             data-v-9cb3d8ec=""
             href="/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app"
@@ -57,13 +52,10 @@
               "
             ></div> </a
           ><!---->
-        </div>
-        <div
-          data-v-9cb3d8ec=""
-          class="swiper-slide swiper-slide-active"
-          data-swiper-slide-index="2"
-          style="width: 1920px"
-        >
+        
+    </swiper-slide>
+    <swiper-slide data-v-9cb3d8ec="">
+      
           <a
             data-v-9cb3d8ec=""
             href="/en/media/press-and-announcements/exclusive-lounges-welcome-ajet-passengers-in-domestic-flights"
@@ -80,13 +72,10 @@
               "
             ></div> </a
           ><!---->
-        </div>
-        <div
-          data-v-9cb3d8ec=""
-          class="swiper-slide swiper-slide-next"
-          data-swiper-slide-index="3"
-          style="width: 1920px"
-        >
+        
+    </swiper-slide>
+    <swiper-slide data-v-9cb3d8ec="">
+      
           <a
             data-v-9cb3d8ec=""
             aria-current="page"
@@ -104,43 +93,41 @@
               "
             ></div> </a
           ><!---->
-        </div>
-      </div>
-      <!----><!----><!----><a
+        
+        <a
         data-v-9cb3d8ec=""
         href="/tr/kurumsal/yolcu-islemleri-ve-haklari"
         class="yolcu-haklari"
       ></a>
-      <div
-        data-v-8cb3e393=""
-        data-v-9cb3d8ec=""
-        class="slider-control action-buttons"
-        style="--071f8bef: flex-start; --006c92dc: 87px"
-      >
-        <div data-v-8cb3e393="" class="swp-paginate">
-          <span data-v-8cb3e393="" class=""></span
-          ><span data-v-8cb3e393="" class=""></span
-          ><span data-v-8cb3e393="" class="active"></span
-          ><span data-v-8cb3e393="" class=""></span>
+    </swiper-slide>
+    <div
+      data-v-8cb3e393=""
+      data-v-9cb3d8ec=""
+      class="slider-control action-buttons"
+      style="--071f8bef: flex-start; --006c92dc: 87px"
+    >
+      <div data-v-8cb3e393="" class="swp-paginate">
+      </div>
+      <div data-v-8cb3e393="" class="swp-nav">
+        <div data-v-8cb3e393="" class="swp swp-prev">
+          <img
+            data-v-8cb3e393=""
+            src="@/assets/chevron-left-ab39b75e.svg"
+            alt=""
+          />
         </div>
-        <div data-v-8cb3e393="" class="swp-nav">
-          <div data-v-8cb3e393="" class="swp swp-prev">
-            <img
-              data-v-8cb3e393=""
-              src="@/assets/chevron-left-ab39b75e.svg"
-              alt=""
-            />
-          </div>
-          <div data-v-8cb3e393="" class="swp swp-next">
-            <img
-              data-v-8cb3e393=""
-              src="@/assets/chevron-right-b7eac6e0.svg"
-              alt=""
-            />
-          </div>
+        <div data-v-8cb3e393="" class="swp swp-next">
+          <img
+            data-v-8cb3e393=""
+            src="@/assets/chevron-right-b7eac6e0.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>
+    </Swiper>
+
+    
     <main class="full">
       <div class="block service-block light-bg">
         <section class="landing-page-main">
@@ -2190,8 +2177,36 @@
   </div>
 </template>
 
+
+<script setup>
+
+
+
+import {Swiper , SwiperSlide} from 'swiper/vue';
+import {Navigation , Autoplay , Pagination} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
+
+
+
+</script>
+
+
 <script>
+
 export default {
   name: "FlightSearch",
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Navigation, Autoplay, Pagination]
+    }
+  }  
 };
 </script>
