@@ -1588,16 +1588,7 @@
                         </li>
                       </div>
                     </div>
-                    <div
-                      class="p-divider p-component p-divider-horizontal p-divider-dotted p-divider-left"
-                      style="justify-content: center; margin: 12px 0px"
-                      role="separator"
-                      aria-orientation="horizontal"
-                      data-pc-name="divider"
-                      data-pc-section="root"
-                    >
-                      <!---->
-                    </div>
+                    
                   </div>
                   <div class="country-list flex flex-column">
                     <div class="flex flex-column justify-content-center gap-2">
