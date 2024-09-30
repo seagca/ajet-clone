@@ -30,7 +30,7 @@
             <h3 data-v-93c6af58="">Pre-Flight</h3>
             <span data-v-93c6af58=""
               ><a data-v-93c6af58="" href="/en/services/free-check-in" class=""
-                >Free Check-in</a
+                >Free -in</a
               ></span
             ><span data-v-93c6af58=""
               ><a data-v-93c6af58="" href="/en/services/seat-selection" class=""
