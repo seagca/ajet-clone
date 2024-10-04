@@ -44,19 +44,20 @@ export default {
 @import './assets/PassengerDropdown-29f27d94.css';
 @import './assets/MyTripsTab-3c8c60c7.css';
 @import './assets/CheckInTab-5ad0570f.css';
+@import './assets/index-f3370e38.css';
+@import './assets/HomePage-b8daaf08.css';
 @import './assets/InformationSection-1d1959df.css';
 @import './assets/CarouselController-2853ddd9.css';
 @import './assets/NewsSlide-27d1b51d.css';
 @import './assets/CampaignSlide-55b15173.css';
 @import './assets/Carousel-0277abb9.css';
-@import './assets/index-f3370e38.css';
-@import './assets/HomePage-b8daaf08.css';
 /*@import './assets/inline-13.css';
 @import './assets/inline-8.css';
 @import './assets/inline-9.css';
 @import './assets/inline-10.css';
 @import './assets/inline-11.css';*/
 @import './assets/0YUBlY.css';
+@import 'swiper/css';
 
 
 
