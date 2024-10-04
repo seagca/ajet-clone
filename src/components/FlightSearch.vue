@@ -5,45 +5,63 @@
       :slides-per-view="auto"
       :loop="false"
       :autoplay="{ delay: 5000 }"
-      :navigation = "{nextEl: '.swp-next', prevEl: '.swp-prev', disabledClass: 'disabled'}"
-      :pagination = "{ el: '.swp-paginate', bulletActiveClass: 'active' ,bulletClass: 'a' , clickable: true, renderBullet: function (index ,className) {   return `<span class='${className}' data-v-8cb3e393> </span>`; }}"
-      
+      :navigation="{
+        nextEl: '.action-buttons .swp-next',
+        prevEl: '.action-buttons .swp-prev',
+        disabledClass: 'disabled',
+      }"
+      :pagination="{
+        el: '.swp-paginate',
+        bulletActiveClass: 'active',
+        bulletClass: 'a',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<span class='${className}' data-v-8cb3e393> </span>`;
+        },
+      }"
       data-v-9cb3d8ec=""
-      class="main-slider "
-    
+      class="main-slider"
     >
-    <swiper-slide data-v-9cb3d8ec="" v-for="(item, index) in mainSliderItems" :key="index">
-      <a data-v-9cb3d8ec="" :href= "item.url">
-            <div data-v-a9e7a9f6="" data-v-9cb3d8ec="" class="slide has-rights" :style="item.style"></div> </a>
-    </swiper-slide>
-    <div
-      data-v-8cb3e393=""
-      data-v-9cb3d8ec=""
-      class="slider-control action-buttons"
-      style="--071f8bef: flex-start; --006c92dc: 87px"
-    >
-      <div data-v-8cb3e393="" class="swp-paginate ">
-      </div>
-      <div data-v-8cb3e393="" class="swp-nav">
-        <div data-v-8cb3e393="" class="swp swp-prev">
-          <img
-            data-v-8cb3e393=""
-            src="@/assets/chevron-left-ab39b75e.svg"
-            alt=""
-          />
+      <swiper-slide
+        data-v-9cb3d8ec=""
+        v-for="(item, index) in mainSliderItems"
+        :key="index"
+      >
+        <a data-v-9cb3d8ec="" :href="item.url">
+          <div
+            data-v-a9e7a9f6=""
+            data-v-9cb3d8ec=""
+            class="slide has-rights"
+            :style="item.style"
+          ></div>
+        </a>
+      </swiper-slide>
+      <div
+        data-v-8cb3e393=""
+        data-v-9cb3d8ec=""
+        class="slider-control action-buttons"
+        style="--071f8bef: flex-start; --006c92dc: 87px"
+      >
+        <div data-v-8cb3e393="" class="swp-paginate"></div>
+        <div data-v-8cb3e393="" class="swp-nav">
+          <div data-v-8cb3e393="" class="swp swp-prev">
+            <img
+              data-v-8cb3e393=""
+              src="@/assets/chevron-left-ab39b75e.svg"
+              alt=""
+            />
+          </div>
+          <div data-v-8cb3e393="" class="swp swp-next">
+            <img
+              data-v-8cb3e393=""
+              src="@/assets/chevron-right-b7eac6e0.svg"
+              alt=""
+            />
+          </div>
         </div>
-        <div data-v-8cb3e393="" class="swp swp-next">
-          <img
-            data-v-8cb3e393=""
-            src="@/assets/chevron-right-b7eac6e0.svg"
-            alt=""
-          />
-        </div>
       </div>
-    </div>
     </Swiper>
 
-    
     <main class="full">
       <div class="block service-block light-bg">
         <section class="landing-page-main">
@@ -727,277 +745,126 @@
             class="carousel-container"
             style="--e2e83e0c: 10px; --8144ae90: 0px; --37a81ce1: 50%"
           >
-            <div
+            <Swiper
+              :modules="[Navigation, Pagination]"
+              :breakpoints="{
+                575: { 
+                  slidesPerView: 1
+                },
+                768: { 
+                  slidesPerView: 2
+                },
+                992: { 
+                  slidesPerView: 2
+                },
+                1200: { 
+                  slidesPerView: 4
+                }
+              }"
+              :pagination="{
+                el: '.controller .swp-paginate',
+                bulletActiveClass: 'active',
+                bulletClass: 'b',
+                clickable: true,
+                renderBullet: function (index, className) {
+                  return `<span class='${className}' data-v-5c1187bc> </span>`;
+                },
+              }"
+              :navigation="{ nextEl: '.controller .swp-next', prevEl: '.controller .swp-prev' , disabledClass: 'disabled' }"
               data-v-abe43e5f=""
-              class="swiper swiper-initialized swiper-horizontal carousel multi"
+              class="carousel multi"
             >
-              <div class="swiper-wrapper">
+              <swiper-slide
+                data-v-abe43e5f=""
+                v-for="(item, index) in flightPointsSlider"
+                :key="index"
+              >
                 <div
+                  data-v-0e3cbb4c=""
                   data-v-abe43e5f=""
-                  class="swiper-slide swiper-slide-active"
-                  data-swiper-slide-index="0"
-                  style="width: 346px"
+                  class="slide"
+                  :style="item.style"
                 >
-                  <!---->
-                  <div
+                  <a
                     data-v-0e3cbb4c=""
-                    data-v-abe43e5f=""
-                    class="slide"
-                    style="
-                      --55b64b8c: url(/ajet-clone/trabzon.webp);
-                    "
+                    :href="item.url"
+                    class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
                   >
-                    <a
+                    <div data-v-0e3cbb4c="" class="box-image"></div>
+                    <div
                       data-v-0e3cbb4c=""
-                      href="/en/city-guide/trabzon-flight-ticket"
-                      class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
+                      class="box-info flex flex-column justify-content-between px-12 pb-18"
                     >
-                      <div data-v-0e3cbb4c="" class="box-image"></div>
                       <div
                         data-v-0e3cbb4c=""
-                        class="box-info flex flex-column justify-content-between px-12 pb-18"
+                        class="caption text-2xl font-bold mt-20"
+                      >
+                        {{ item.text }}
+                      </div>
+                      <div data-v-0e3cbb4c="" class="date">
+                        To Fly at Advantageous Prices
+                      </div>
+                      <div
+                        data-v-0e3cbb4c=""
+                        class="pricing flex justify-content-start align-items-center"
+                      >
+                        <div data-v-0e3cbb4c="" class="price">Buy Ticket</div>
+                      </div>
+                      <div
+                        data-v-0e3cbb4c=""
+                        class="pricing-cover flex justify-content-between align-items-center"
                       >
                         <div
                           data-v-0e3cbb4c=""
-                          class="caption text-2xl font-bold mt-20"
-                        >
-                          Trabzon
-                        </div>
-                        <div data-v-0e3cbb4c="" class="date">
-                          To Fly at Advantageous Prices
-                        </div>
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="pricing flex justify-content-start align-items-center"
+                          class="price-container flex justify-content-between align-items-center"
                         >
                           <div data-v-0e3cbb4c="" class="price">Buy Ticket</div>
                         </div>
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="pricing-cover flex justify-content-between align-items-center"
-                        >
-                          <div
+                        <div data-v-0e3cbb4c="" class="arrow">
+                          <img
                             data-v-0e3cbb4c=""
-                            class="price-container flex justify-content-between align-items-center"
-                          >
-                            <div data-v-0e3cbb4c="" class="price">
-                              Buy Ticket
-                            </div>
-                          </div>
-                          <div data-v-0e3cbb4c="" class="arrow">
-                            <img
-                              data-v-0e3cbb4c=""
-                              src="@/assets/arrow-right-255a83a7.svg"
-                              alt=""
-                            />
-                          </div>
+                            src="@/assets/arrow-right-255a83a7.svg"
+                            alt=""
+                          />
                         </div>
                       </div>
-                    </a>
-                  </div>
-                  <!----><!----><!----><!----><!----><!---->
+                    </div>
+                  </a>
                 </div>
-                <div
-                  data-v-abe43e5f=""
-                  class="swiper-slide swiper-slide-next"
-                  data-swiper-slide-index="1"
-                  style="width: 346px"
-                >
-                  <!---->
-                  <div
-                    data-v-0e3cbb4c=""
-                    data-v-abe43e5f=""
-                    class="slide"
-                    style="
-                      --55b64b8c: url(/ajet-clone/erzurum.webp);
-                    "
-                  >
-                    <a
-                      data-v-0e3cbb4c=""
-                      href="/en/city-guide/erzurum-flight-ticket"
-                      class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
-                    >
-                      <div data-v-0e3cbb4c="" class="box-image"></div>
-                      <div
-                        data-v-0e3cbb4c=""
-                        class="box-info flex flex-column justify-content-between px-12 pb-18"
-                      >
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="caption text-2xl font-bold mt-20"
-                        >
-                          Erzurum
-                        </div>
-                        <div data-v-0e3cbb4c="" class="date">
-                          To Fly at Advantageous Prices
-                        </div>
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="pricing flex justify-content-start align-items-center"
-                        >
-                          <div data-v-0e3cbb4c="" class="price">Buy Ticket</div>
-                        </div>
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="pricing-cover flex justify-content-between align-items-center"
-                        >
-                          <div
-                            data-v-0e3cbb4c=""
-                            class="price-container flex justify-content-between align-items-center"
-                          >
-                            <div data-v-0e3cbb4c="" class="price">
-                              Buy Ticket
-                            </div>
-                          </div>
-                          <div data-v-0e3cbb4c="" class="arrow">
-                            <img
-                              data-v-0e3cbb4c=""
-                              src="@/assets/arrow-right-255a83a7.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+              </swiper-slide>
+              <div
+                data-v-5c1187bc=""
+                data-v-abe43e5f=""
+                class="slider-control controller"
+                style="--cfbe0776: center; --0a8cc1e8: 87px"
+              >
+                <div data-v-5c1187bc="" class="swp-nav">
+                  <div data-v-5c1187bc="" class="swp swp-prev">
+                    <img
+                      data-v-5c1187bc=""
+                      src="@/assets/chevron-left-ab39b75e.svg"
+                      alt=""
+                    />
                   </div>
-                  <!----><!----><!----><!----><!----><!---->
                 </div>
-                <div
-                  data-v-abe43e5f=""
-                  class="swiper-slide"
-                  data-swiper-slide-index="2"
-                  style="width: 346px"
-                >
-                  <!---->
-                  <div
-                    data-v-0e3cbb4c=""
-                    data-v-abe43e5f=""
-                    class="slide"
-                    style="
-                      --55b64b8c: url(/ajet-clone/adana.webp);
-                    "
-                  >
-                    <a
-                      data-v-0e3cbb4c=""
-                      href="/en/city-guide/adana-flight-ticket"
-                      class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
-                    >
-                      <div data-v-0e3cbb4c="" class="box-image"></div>
-                      <div
-                        data-v-0e3cbb4c=""
-                        class="box-info flex flex-column justify-content-between px-12 pb-18"
-                      >
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="caption text-2xl font-bold mt-20"
-                        >
-                          Adana
-                        </div>
-                        <div data-v-0e3cbb4c="" class="date">
-                          To Fly at Advantageous Prices
-                        </div>
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="pricing flex justify-content-start align-items-center"
-                        >
-                          <div data-v-0e3cbb4c="" class="price">Buy Ticket</div>
-                        </div>
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="pricing-cover flex justify-content-between align-items-center"
-                        >
-                          <div
-                            data-v-0e3cbb4c=""
-                            class="price-container flex justify-content-between align-items-center"
-                          >
-                            <div data-v-0e3cbb4c="" class="price">
-                              Buy Ticket
-                            </div>
-                          </div>
-                          <div data-v-0e3cbb4c="" class="arrow">
-                            <img
-                              data-v-0e3cbb4c=""
-                              src="@/assets/arrow-right-255a83a7.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <!----><!----><!----><!----><!----><!---->
+                <div data-v-5c1187bc="" class="swp-paginate">
+                  <span data-v-5c1187bc="" class=""></span
+                  ><span data-v-5c1187bc="" class=""></span
+                  ><span data-v-5c1187bc="" class=""></span
+                  ><span data-v-5c1187bc="" class=""></span>
                 </div>
-                <div
-                  data-v-abe43e5f=""
-                  class="swiper-slide"
-                  data-swiper-slide-index="3"
-                  style="width: 346px"
-                >
-                  <!---->
-                  <div
-                    data-v-0e3cbb4c=""
-                    data-v-abe43e5f=""
-                    class="slide"
-                    style="
-                      --55b64b8c: url(/ajet-clone/bodrum.webp);
-                    "
-                  >
-                    <a
-                      data-v-0e3cbb4c=""
-                      href="/en/city-guide/bodrum-flight-ticket"
-                      class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
-                    >
-                      <div data-v-0e3cbb4c="" class="box-image"></div>
-                      <div
-                        data-v-0e3cbb4c=""
-                        class="box-info flex flex-column justify-content-between px-12 pb-18"
-                      >
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="caption text-2xl font-bold mt-20"
-                        >
-                          Bodrum
-                        </div>
-                        <div data-v-0e3cbb4c="" class="date">
-                          To Fly at Advantageous Prices
-                        </div>
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="pricing flex justify-content-start align-items-center"
-                        >
-                          <div data-v-0e3cbb4c="" class="price">Buy Ticket</div>
-                        </div>
-                        <div
-                          data-v-0e3cbb4c=""
-                          class="pricing-cover flex justify-content-between align-items-center"
-                        >
-                          <div
-                            data-v-0e3cbb4c=""
-                            class="price-container flex justify-content-between align-items-center"
-                          >
-                            <div data-v-0e3cbb4c="" class="price">
-                              Buy Ticket
-                            </div>
-                          </div>
-                          <div data-v-0e3cbb4c="" class="arrow">
-                            <img
-                              data-v-0e3cbb4c=""
-                              src="@/assets/arrow-right-255a83a7.svg"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </a>
+                <div data-v-5c1187bc="" class="swp-nav">
+                  <div data-v-5c1187bc="" class="swp swp-next">
+                    <img
+                      data-v-5c1187bc=""
+                      src="@/assets/chevron-right-b7eac6e0.svg"
+                      alt=""
+                    />
                   </div>
-                  <!----><!----><!----><!----><!----><!---->
                 </div>
               </div>
-              <!----><!----><!----><span
-                data-v-abe43e5f=""
-                class="hidden"
-              ></span>
-            </div>
+            </Swiper>
+
             <!---->
           </div>
         </section>
@@ -1505,7 +1372,6 @@
                         </li>
                       </div>
                     </div>
-                    
                   </div>
                   <div class="country-list flex flex-column">
                     <div class="flex flex-column justify-content-center gap-2">
@@ -2084,24 +1950,12 @@
   </div>
 </template>
 
-
 <script setup>
-
-
-
-import {Swiper , SwiperSlide} from 'swiper/vue';
-import {Navigation , Autoplay , Pagination} from 'swiper/modules';
-
-
-
-
-
-
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 </script>
 
-
 <script>
-
 export default {
   name: "FlightSearch",
   components: {
@@ -2109,35 +1963,65 @@ export default {
     SwiperSlide,
   },
   data() {
-      return {
-        mainSliderItems: [
-          {
-            id: 1,
-            url: '/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet',
-            style: '--ef97a558: url(/ajet-clone/20240928/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/20240928/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/20240928/EN/1900x640.jpg);',
-          },
-          {
-            id: 2,
-            url: '/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app',
-            style: ' --ef97a558: url(/ajet/clone/20240929/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/20240929/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/20240929/EN/1900x640.jpg); ',
-          },
-          {
-            id: 3,
-            url: '/en/media/press-and-announcements/exclusive-lounges-welcome-ajet-passengers-in-domestic-flights',
-            style: '--ef97a558: url(/ajet-clone/20240911/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/20240911/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/20240911/EN/1900x640.jpg);',
-          },
-          {
-            id: 4,
-            url: '/en',
-            style: '--ef97a558: url(/ajet-clone/20240813/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/20240813/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/20240813/EN/1900x640.jpg);',
-          },
-        ],
-      };
-    },
+    return {
+      mainSliderItems: [
+        {
+          id: 0,
+          url: "/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet",
+          style:
+            "--ef97a558: url(/ajet-clone/20240928/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/20240928/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/20240928/EN/1900x640.jpg);",
+        },
+        {
+          id: 1,
+          url: "/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app",
+          style:
+            " --ef97a558: url(/ajet/clone/20240929/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/20240929/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/20240929/EN/1900x640.jpg); ",
+        },
+        {
+          id: 2,
+          url: "/en/media/press-and-announcements/exclusive-lounges-welcome-ajet-passengers-in-domestic-flights",
+          style:
+            "--ef97a558: url(/ajet-clone/20240911/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/20240911/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/20240911/EN/1900x640.jpg);",
+        },
+        {
+          id: 3,
+          url: "/en",
+          style:
+            "--ef97a558: url(/ajet-clone/20240813/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/20240813/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/20240813/EN/1900x640.jpg);",
+        },
+      ],
+      flightPointsSlider: [
+        {
+          id: 0,
+          text: "Trabzon",
+          url: "/en/city-guide/trabzon-flight-ticket",
+          style: "--55b64b8c: url(/ajet-clone/trabzon.webp);",
+        },
+        {
+          id: 1,
+          text: "Erzurum",
+          url: "/en/city-guide/erzurum-flight-ticket",
+          style: "--55b64b8c: url(/ajet-clone/erzurum.webp);",
+        },
+        {
+          id: 2,
+          text: "Adana",
+          url: "/en/city-guide/adana-flight-ticket",
+          style: "--55b64b8c: url(/ajet-clone/adana.webp);",
+        },
+        {
+          id: 3,
+          text: "Bodrum",
+          url: "/en/city-guide/bodrum-flight-ticket",
+          style: "--55b64b8c: url(/ajet-clone/bodrum.webp);",
+        },
+      ],
+    };
+  },
   setup() {
     return {
-      modules: [Navigation, Autoplay, Pagination]
-    }
-  }  
+      modules: [Navigation, Autoplay, Pagination],
+    };
+  },
 };
 </script>

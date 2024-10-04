@@ -155,8 +155,9 @@
               src="@/assets/menu-toggle-cde1118c.svg"
               class="mob-toggle"
               alt=""
+              @click= "toggleClass()"
             />
-            <div data-v-93c6af58="" class="mob-menu-content">
+            <div data-v-93c6af58="" :class="{'mob-menu-content active': isActive, 'mob-menu-content': !isActive}">
               <img
                 data-v-93c6af58=""
                 src="@/assets/ajet-logo-big-blue-4e958dd2.svg"
@@ -306,6 +307,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import BannerPinIcon from '@/components/BannerPinIcon.vue';
 
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
 });
@@ -325,7 +327,8 @@ export default {
     BannerPinIcon,
   },
   data() {
-      return {
+    return {
+        isActive: false,
         topSliderItems: [
           {
             id: 1,
@@ -358,7 +361,9 @@ export default {
   
   methods: {
 
-
+    toggleClass() {
+      this.isActive = !this.isActive; // Toggle the class when clicked
+    },
 
     closeBannerWrapper() {
       const activeElements = document.querySelectorAll('.active[data-v-93c6af58]');
