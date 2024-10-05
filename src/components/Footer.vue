@@ -9,54 +9,54 @@
           <div class="flex gap-7">
             <div class="flex flex-column gap-3 mt-15">
               <div>
-                <a href="/en/corporate"
-                  class="path-item-label text-base text-tertiary-500 font-bold block mb-10">Corporate</a>
+                <router-link to="/en/corporate"
+                  class="path-item-label text-base text-tertiary-500 font-bold block mb-10">Corporate</router-link>
                 <ul class="list-none flex flex-column gap-2 max-w-max w-full">
                   <li>
-                    <a href="/en/corporate/about-us" class="text-white text-xs font-medium">About Us</a>
+                    <router-link to="/en/corporate/about-us" class="text-white text-xs font-medium">About Us</router-link>
                   </li>
                   <li>
-                    <a href="/en/corporate/vision-and-mission" class="text-white text-xs font-medium">Vision &amp;
-                      Mission</a>
+                    <router-link to="/en/corporate/vision-and-mission" class="text-white text-xs font-medium">Vision &amp;
+                      Mission</router-link>
                   </li>
                   <li>
-                    <a href="/en/corporate/our-policies" class="text-white text-xs font-medium">Our Policies</a>
+                    <router-link to="/en/corporate/our-policies" class="text-white text-xs font-medium">Our Policies</router-link>
                   </li>
                   <li>
-                    <a href="/en/corporate/flight-points" class="text-white text-xs font-medium">Flight Points</a>
+                    <router-link to="/en/corporate/flight-points" class="text-white text-xs font-medium">Flight Points</router-link>
                   </li>
                   <li>
-                    <a href="/en/frequently-asked-questions" class="text-white text-xs font-medium">Frequently Asked
-                      Questions</a>
+                    <router-link to="/en/frequently-asked-questions" class="text-white text-xs font-medium">Frequently Asked
+                      Questions</router-link>
                   </li>
                   <li>
-                    <a href="/en/corporate/rules-and-conditions" class="text-white text-xs font-medium">Rules and
-                      Conditions</a>
+                    <router-link to="/en/corporate/rules-and-conditions" class="text-white text-xs font-medium">Rules and
+                      Conditions</router-link>
                   </li>
                   <li>
-                    <a href="/en/career" class="text-white text-xs font-medium">Career</a>
+                    <router-link to="/en/career" class="text-white text-xs font-medium">Career</router-link>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="flex flex-column gap-3 mt-15">
               <div>
-                <a href="/en/media" class="path-item-label text-base text-tertiary-500 font-bold block mb-10">Media</a>
+                <router-link to="/en/media" class="path-item-label text-base text-tertiary-500 font-bold block mb-10">Media</router-link>
                 <ul class="list-none flex flex-column gap-2 font-normal">
                   <li>
-                    <a href="/en/media/press-and-announcements" class="text-white text-xs">Press and Announcements</a>
+                    <router-link to="/en/media/press-and-announcements" class="text-white text-xs">Press and Announcements</router-link>
                   </li>
                   <li>
-                    <a href="/en/media/gallery" class="text-white text-xs">Gallery</a>
+                    <router-link to="/en/media/gallery" class="text-white text-xs">Gallery</router-link>
                   </li>
                 </ul>
               </div>
               <div>
-                <a href="/en/contact"
-                  class="path-item-label text-base text-tertiary-500 font-bold block mb-10">Contact</a>
+                <router-link to="/en/contact"
+                  class="path-item-label text-base text-tertiary-500 font-bold block mb-10">Contact</router-link>
                 <ul class="list-none flex flex-column gap-2 font-normal">
                   <li>
-                    <a href="/en/baggage-tracking" class="text-white text-xs">Baggage Tracking</a>
+                    <router-link to="/en/baggage-tracking" class="text-white text-xs">Baggage Tracking</router-link>
                   </li>
                 </ul>
               </div>
@@ -169,7 +169,7 @@
                 <router-link to="/en/corporate/feedback-form" class="text-white font-medium text-xs">Feedback Form</router-link>
               </li>
               <li>
-                <router-link to="" class="text-white font-medium text-xs">Change Cookie Settings</router-link>
+                <router-link to="/en/cookie-policy" class="text-white font-medium text-xs">Change Cookie Settings</router-link>
               </li>
               <li>
                 <router-link to="/en/corporate/communication-center" class="text-white font-medium text-xs">Stay Informed About Us</router-link>
