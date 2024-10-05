@@ -1,0 +1,47 @@
+.error-container {
+  background-image:url(@/assets/error-bg-a8a394dd.png);
+  background-repeat:no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh
+}
+.error-container>*:first-child {
+  border-radius:16px
+}
+.error-container .error-content {
+  display:flex;
+  flex-direction:column;
+  align-items:center
+}
+.error-container .error-content-description {
+  font-size:20px;
+  font-weight:600;
+  margin-top:16px
+}
+@media (min-width: 768px) {
+  .error-container .error-content-description {
+    font-size:30px;
+    margin-top:24px
+  }
+}
+.error-container .error-content-description2 {
+  font-size:16px;
+  font-weight:500;
+  color:#0a2351;
+  margin-top:8px
+}
+@media (min-width: 768px) {
+  .error-container .error-content-description2 {
+    font-size:24px;
+    margin-top:12px
+  }
+}
+.error-container .error-content-icon img {
+  width:136px
+}
+@media (min-width: 768px) {
+  .error-container .error-content-icon img {
+    width:249px
+  }
+}

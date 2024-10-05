@@ -3,6 +3,8 @@
     <AppHeader />
     <FlightSearch />
     <AppFooter />
+    <AppHome />
+    <router-view />
   </div>
 </template>
   
@@ -10,16 +12,18 @@
 
 
 <script>
-import AppHeader from './components/AppHeader.vue';
-import FlightSearch from './components/FlightSearch.vue';
-import AppFooter from './components/Footer.vue';
+//import AppHeader from './components/AppHeader.vue';
+//import FlightSearch from './components/FlightSearch.vue';
+//import AppFooter from './components/Footer.vue';
+//import AppHome from './views/Home.vue';
 
 export default {
   name: 'App',
   components: {
-    AppHeader,
-    FlightSearch,
-    AppFooter,
+    //AppHeader,
+    //FlightSearch,
+    //AppFooter,
+    //AppHome,
   },
 };
 </script>
@@ -58,6 +62,7 @@ export default {
 @import './assets/inline-11.css';*/
 @import './assets/0YUBlY.css';
 @import 'swiper/css';
+@import './assets/ErrorContent-d96ed3d7.css';
 
 
 

@@ -1,6 +1,7 @@
 
 import { createApp } from 'vue';
 import App from './App.vue';
+import { router } from './router/router';
 /*import './assets/css2-1.css';
 import './assets/css2-2.css';
 import './assets/css2-3.css';
@@ -35,8 +36,8 @@ import './assets/Gl1X.css';*/
 
 
 
+const app = createApp(App);
 
+app.use(router); // Ensure the router is used
+app.mount('#app');
 
-
-
-createApp(App).mount('#app')

@@ -185,7 +185,7 @@
                       alt=""
                   /></span>
                 </div>
-                <span data-v-93c6af58="" class="item"
+                <span data-v-93c6af58="" :class="{'item active': subActive, 'item': !subActive}"
                   ><a data-v-93c6af58="" href="/en/services" class="item-link"
                     >Services</a
                   ><img
@@ -194,6 +194,7 @@
                     class="sub-toggle"
                     src="@/assets/chevron-right.svg"
                     alt=""
+                    @click="subToggle()"
                   />
                   <div data-v-93c6af58="" class="subs">
                     <span data-v-93c6af58="" class="sub-item"
@@ -329,6 +330,7 @@ export default {
   data() {
     return {
         isActive: false,
+        subActive : false,
         topSliderItems: [
           {
             id: 1,
@@ -363,6 +365,9 @@ export default {
 
     toggleClass() {
       this.isActive = !this.isActive; // Toggle the class when clicked
+    },
+    subToggle() {
+      this.subActive = !this.subActive; // Toggle the class when clicked
     },
 
     closeBannerWrapper() {

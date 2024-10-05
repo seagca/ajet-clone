@@ -1,0 +1,36 @@
+<template>
+    <AppHeader />
+  <div>
+    <div class="error-container">
+      <div class="bg-white p-32 md:p-60">
+        <div class="error-content">
+          <div class="error-content-icon">
+            <img
+              src="data:image/png;base64,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"
+            />
+          </div>
+          <div class="error-content-description">Page not found</div>
+          <!---->
+          <router-link to="/"
+          class="aj-button tertiary large align-self-stretch mt-24 md:mt-48"
+          type="button">
+          Back to the homepage
+        </router-link>
+        </div>
+      </div>
+    </div>
+  </div>
+  <AppFooter />
+</template>
+
+<script>
+import AppHeader from '@/components/AppHeader.vue';
+import AppFooter from '@/components/Footer.vue';
+export default {
+    name: "NotFound",
+  components: {
+    AppHeader, // Register the Header component
+    AppFooter, // Register the Footer component
+  },
+};
+</script>
