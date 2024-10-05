@@ -8,12 +8,20 @@ import NotFound from '@/views/NotFound.vue'; // The custom 404 component you'll 
 export const router = createRouter({
     history: createWebHistory(),
     routes: [
-  {
+      {
+    path: '/ajet-clone',
+    redirect: '/ajet-clone/en' // The default route to your Home component
+      },
+      {
     path: '/',
-    redirect: '/en' // The default route to your Home component
+    redirect: '/ajet-clone/en' // The default route to your Home component
+      },
+      {
+    path: '/en',
+    redirect: '/ajet-clone/en' // The default route to your Home component
       },
   {
-    path: '/en',
+    path: '/ajet-clone/en',
     name: 'AppHome',
     component: AppHome // The default route to your Home component
       },
