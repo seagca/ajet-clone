@@ -87,16 +87,15 @@
     </div>
     <div data-v-93c6af58="" class="menu-container">
       <main data-v-93c6af58="" class="">
-        <a
+        <router-link to="/ajet-clone"
           data-v-93c6af58=""
-          href="/en"
-          class="router-link-active router-link-exact-active home-link"
+          class="home-link"
           aria-current="page"
           ><img
             data-v-93c6af58=""
             src="@/assets/ajet-logo-0d41a81e.svg"
             alt="AJet"
-        /></a>
+        /></router-link>
         <div data-v-93c6af58="" class="menu-items" >
           <span data-v-93c6af58="" class="item hidden lg:flex" @mouseover="serviceOpen()" @mouseleave="serviceClose()"
             ><a
