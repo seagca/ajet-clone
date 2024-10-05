@@ -166,20 +166,19 @@
             <ul class="flex md:ml-auto md:flex-row flex-column" style="gap: 24px">
               <!---->
               <li>
-                <a href="/en/corporate/feedback-form" class="text-white font-medium text-xs">Feedback Form</a>
+                <router-link to="/en/corporate/feedback-form" class="text-white font-medium text-xs">Feedback Form</router-link>
               </li>
               <li>
-                <a href="" class="text-white font-medium text-xs">Change Cookie Settings</a>
+                <router-link to="" class="text-white font-medium text-xs">Change Cookie Settings</router-link>
               </li>
               <li>
-                <a href="/en/corporate/communication-center" class="text-white font-medium text-xs">Stay Informed About
-                  Us</a>
+                <router-link to="/en/corporate/communication-center" class="text-white font-medium text-xs">Stay Informed About Us</router-link>
               </li>
               <li>
-                <a href="/en/corporate/privacy-statement" class="text-white font-medium text-xs">Privacy Statement</a>
+                <router-link to="/en/corporate/privacy-statement" class="text-white font-medium text-xs">Privacy Statement</router-link>
               </li>
               <li>
-                <a href="/en/corporate/cookie-policy" class="text-white font-medium text-xs">Cookie Policy</a>
+                <router-link to="/en/corporate/cookie-policy" class="text-white font-medium text-xs">Cookie Policy</router-link>
               </li>
             </ul>
             <p class="text-sm md:hidden block py-30">

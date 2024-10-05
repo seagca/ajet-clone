@@ -8,23 +8,21 @@ import NotFound from '@/views/NotFound.vue'; // The custom 404 component you'll 
 export const router = createRouter({
   history: createWebHashHistory(), // Using hash mode for routing
   routes: [
-    
     {
-      path: '/ajet-clone', 
+      path: '/', 
+      redirect: '/en'
+    },
+    {
+      path: '/en',
       name: 'AppHome',
-      component: AppHome // Main route for '/ajet-clone'
+      component: AppHome
     },
     {
-      path: '/ajet-clone/:catchAll(.*)', // Catch-all for undefined paths under '/ajet-clone'
+      path: '/:catchAll(.*)',
       name: 'NotFound',
-      component: NotFound // Custom 404 component
+      component: NotFound
     },
-    {
-      path: '/:catchAll(.*)', // Global catch-all route for undefined paths
-      name: 'GlobalNotFound',
-      component: NotFound // Redirect to a custom 404 page for all other routes
-    },
-  ],
+    ],
   scrollBehavior() {
       return { top : 0 }; // Scroll to the top for new route navigation
   }

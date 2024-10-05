@@ -14,23 +14,23 @@
           <div data-v-93c6af58="" class="sub-block">
             <h3 data-v-93c6af58="">Pre-Flight</h3>
             <span data-v-93c6af58=""
-              ><a data-v-93c6af58="" href="/en/services/free-check-in" class=""
-                >Free Check-in</a
+              ><router-link data-v-93c6af58="" to="/en/services/free-check-in" class=""
+                >Free Check-in</router-link
               ></span
             ><span data-v-93c6af58=""
-              ><a data-v-93c6af58="" href="/en/services/seat-selection" class=""
-                >Seat Selection</a
+              ><router-link data-v-93c6af58="" to="/en/services/seat-selection" class=""
+                >Seat Selection</router-link
               ></span
             ><span data-v-93c6af58=""
-              ><a data-v-93c6af58="" href="/en/services/excess-baggage" class=""
-                >Excess Baggage</a
+              ><router-link data-v-93c6af58="" to="/en/services/excess-baggage" class=""
+                >Excess Baggage</router-link
               ></span
             ><span data-v-93c6af58=""
-              ><a
+              ><router-link
                 data-v-93c6af58=""
-                href="/en/services/sports-equipment"
+                to="/en/services/sports-equipment"
                 class=""
-                >Sports Equipment</a
+                >Sports Equipment</router-link
               ></span
             >
           </div>
@@ -52,12 +52,12 @@
         class="top-banner top-banner-container swiper-ios text-xs md:text-sm xl:text-base active"
       >
       <swiper-slide data-v-500f2780="" v-for="(item, index) in topSliderItems" :key="index">
-        <a data-v-500f2780="" :href = "item.url" >
+        <router-link data-v-500f2780="" :to = "item.url" >
           <span data-v-500f2780="" class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68" style="color: rgb(0, 0, 0)">
             <BannerPinIcon></BannerPinIcon>
               {{ item.text }}
           </span>
-        </a>
+        </router-link>
       </swiper-slide>
 
         <div
@@ -87,7 +87,7 @@
     </div>
     <div data-v-93c6af58="" class="menu-container">
       <main data-v-93c6af58="" class="">
-        <router-link to="/ajet-clone"
+        <router-link to="/"
           data-v-93c6af58=""
           class="home-link"
           aria-current="page"
@@ -98,30 +98,30 @@
         /></router-link>
         <div data-v-93c6af58="" class="menu-items" >
           <span data-v-93c6af58="" class="item hidden lg:flex" @mouseover="serviceOpen()" @mouseleave="serviceClose()"
-            ><a
+            ><router-link
               data-v-93c6af58=""
-              href="/en/services"
+              to="/en/services"
               class="item-link flex align-items-center"
               >Services
               <span data-v-93c6af58="" class="material-icons ml-4"
                 >expand_more</span
-              ></a
+              ></router-link
             ></span
           ><span data-v-93c6af58="" class="item hidden lg:flex"
-            ><a
+            ><router-link
               data-v-93c6af58=""
-              href="/en/city-guide"
+              to="/en/city-guide"
               class="item-link flex align-items-center"
               >City Guide
-              <!----></a
+              <!----></router-link
             ></span
           ><span data-v-93c6af58="" class="item hidden lg:flex"
-            ><a
+            ><router-link
               data-v-93c6af58=""
-              href="/en/frequently-asked-questions"
+              to="/en/frequently-asked-questions"
               class="item-link flex align-items-center"
               >FAQ
-              <!----></a
+              <!----></router-link
             ></span
           >
         </div>
@@ -185,8 +185,8 @@
                   /></span>
                 </div>
                 <span data-v-93c6af58="" :class="{'item active': subActive, 'item': !subActive}"
-                  ><a data-v-93c6af58="" href="/en/services" class="item-link"
-                    >Services</a
+                  ><router-link data-v-93c6af58="" to="/en/services" class="item-link"
+                    >Services</router-link
                   ><img
                     data-v-93c6af58=""
                     style="width: 11px !important"
@@ -197,78 +197,78 @@
                   />
                   <div data-v-93c6af58="" class="subs">
                     <span data-v-93c6af58="" class="sub-item"
-                      ><a
+                      ><router-link
                         data-v-93c6af58=""
-                        href="/en/services/free-check-in"
+                        to="/en/services/free-check-in"
                         class="sub-link"
-                        >Free Check-in</a
+                        >Free Check-in</router-link
                       ></span
                     ><span data-v-93c6af58="" class="sub-item"
-                      ><a
+                      ><router-link
                         data-v-93c6af58=""
-                        href="/en/services/seat-selection"
+                        to="/en/services/seat-selection"
                         class="sub-link"
-                        >Seat Selection</a
+                        >Seat Selection</router-link
                       ></span
                     ><span data-v-93c6af58="" class="sub-item"
-                      ><a
+                      ><router-link
                         data-v-93c6af58=""
-                        href="/en/services/excess-baggage"
+                        to="/en/services/excess-baggage"
                         class="sub-link"
-                        >Excess Baggage</a
+                        >Excess Baggage</router-link
                       ></span
                     ><span data-v-93c6af58="" class="sub-item"
-                      ><a
+                      ><router-link
                         data-v-93c6af58=""
-                        href="/en/services/sports-equipment"
+                        to="/en/services/sports-equipment"
                         class="sub-link"
-                        >Sports Equipment</a
+                        >Sports Equipment</router-link
                       ></span
                     >
                   </div> </span
                 ><span data-v-93c6af58="" class="item"
-                  ><a data-v-93c6af58="" href="/en/city-guide" class="item-link"
-                    >City Guide</a
+                  ><router-link data-v-93c6af58="" to="/en/city-guide" class="item-link"
+                    >City Guide</router-link
                   ><!---->
                   <div data-v-93c6af58="" class="subs"></div> </span
                 ><span data-v-93c6af58="" class="item"
-                  ><a
+                  ><router-link
                     data-v-93c6af58=""
-                    href="/en/frequently-asked-questions"
+                    to="/en/frequently-asked-questions"
                     class="item-link"
-                    >FAQ</a
+                    >FAQ</router-link
                   ><!---->
                   <div data-v-93c6af58="" class="subs"></div>
                 </span>
               </nav>
               <nav data-v-93c6af58="" class="bottom">
                 <span data-v-93c6af58="" class="item"
-                  ><a
+                  ><router-link
                     data-v-93c6af58=""
-                    href="/en/corporate/feedback-form"
+                    to="/en/corporate/feedback-form"
                     class="item-link"
-                    >Feedback Form</a
+                    >Feedback Form</router-link
                   ></span
                 ><span data-v-93c6af58="" class="item"
-                  ><a
+                  ><router-link
                     data-v-93c6af58=""
-                    href="/en/corporate/our-policies"
+                    to="/en/corporate/our-policies"
                     class="item-link"
-                    >Our Policy</a
+                    >Our Policy</router-link
                   ></span
                 ><span data-v-93c6af58="" class="item"
-                  ><a
+                  ><router-link
                     data-v-93c6af58=""
-                    href="/en/corporate/privacy-statement"
+                    to="/en/corporate/privacy-statement"
                     class="item-link"
-                    >Personal Information Protection</a
+                    >Personal Information Protection</router-link
                   ></span
                 ><span data-v-93c6af58="" class="item"
-                  ><a
+                  ><router-link
                     data-v-93c6af58=""
-                    href="/en/corporate/rules-and-conditions/privacy-and-cookie-policy"
+                    to="/en/corporate/rules-and-conditions/privacy-and-cookie-policy"
                     class="item-link"
-                    >Privacy and Cookie Policy</a
+                    >Privacy and Cookie Policy</router-link
                   ></span
                 >
               </nav>

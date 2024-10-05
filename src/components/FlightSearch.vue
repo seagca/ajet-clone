@@ -27,14 +27,14 @@
         v-for="(item, index) in mainSliderItems"
         :key="index"
       >
-        <a data-v-9cb3d8ec="" :href="item.url">
+        <router-link data-v-9cb3d8ec="" :to="item.url">
           <div
             data-v-a9e7a9f6=""
             data-v-9cb3d8ec=""
             class="slide has-rights"
             :style="item.style"
           ></div>
-        </a>
+        </router-link>
       </swiper-slide>
       <div
         data-v-8cb3e393=""
@@ -596,9 +596,9 @@
             data-v-29bf10e7=""
             class="services flex justify-content-space-around align-items-center flex-wrap"
           >
-            <a
+            <router-link
               data-v-29bf10e7=""
-              href="/en/services/seat-selection"
+              to="/en/services/seat-selection"
               class="block w-full xl:w-4 p-12"
             >
               <div
@@ -619,10 +619,10 @@
                 >
                   Seat Selection
                 </h3>
-              </div> </a
-            ><a
+              </div> </router-link
+            ><router-link
               data-v-29bf10e7=""
-              href="/en/services/excess-baggage"
+              to="/en/services/excess-baggage"
               class="block w-full xl:w-4 p-12"
             >
               <div
@@ -643,10 +643,10 @@
                 >
                   Excess Baggage
                 </h3>
-              </div> </a
-            ><a
+              </div> </router-link
+            ><router-link
               data-v-29bf10e7=""
-              href="/en/services/sports-equipment"
+              to="/en/services/sports-equipment"
               class="block w-full xl:w-4 p-12"
             >
               <div
@@ -668,7 +668,7 @@
                   Sports Equipment
                 </h3>
               </div>
-            </a>
+            </router-link>
           </div>
         </section>
       </div>
@@ -785,9 +785,9 @@
                   class="slide"
                   :style="item.style"
                 >
-                  <a
+                  <router-link
                     data-v-0e3cbb4c=""
-                    :href="item.url"
+                    :to="item.url"
                     class="content flex flex-column justify-content-stretch text-color border-1 border-gray-200 overflow-hidden"
                   >
                     <div data-v-0e3cbb4c="" class="box-image"></div>
@@ -829,7 +829,7 @@
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </router-link>
                 </div>
               </swiper-slide>
               <div
@@ -965,10 +965,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/amsterdam-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/amsterdam-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Amsterdam</a
+                            >Amsterdam</router-link
                           >
                         </li>
                       </div>
@@ -991,24 +991,24 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/basel-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/basel-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Basel</a
+                            >Basel</router-link
                           >
                         </li>
                         <li>
-                          <a
-                            href="/en/city-guide/geneva-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/geneva-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Geneva</a
+                            >Geneva</router-link
                           >
                         </li>
                         <li>
-                          <a
-                            href="/en/city-guide/zurich-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/zurich-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Zurich</a
+                            >Zurich</router-link
                           >
                         </li>
                       </div>
@@ -1031,10 +1031,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/belgrade-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/belgrade-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Belgrade</a
+                            >Belgrade</router-link
                           >
                         </li>
                       </div>
@@ -1057,10 +1057,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/berlin-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/berlin-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Berlin</a
+                            >Berlin</router-link
                           >
                         </li>
                       </div>
@@ -1083,10 +1083,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/brussels-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/brussels-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Brussels</a
+                            >Brussels</router-link
                           >
                         </li>
                       </div>
@@ -1109,10 +1109,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/budapest-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/budapest-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Budapest</a
+                            >Budapest</router-link
                           >
                         </li>
                       </div>
@@ -1135,10 +1135,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/copenhagen-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/copenhagen-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Copenhagen</a
+                            >Copenhagen</router-link
                           >
                         </li>
                       </div>
@@ -1161,10 +1161,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/lefkosa-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/lefkosa-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Lefkosa</a
+                            >Lefkosa</router-link
                           >
                         </li>
                       </div>
@@ -1187,10 +1187,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/london-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/london-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >London</a
+                            >London</router-link
                           >
                         </li>
                       </div>
@@ -1213,17 +1213,17 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/lyon-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/lyon-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Lyon</a
+                            >Lyon</router-link
                           >
                         </li>
                         <li>
-                          <a
-                            href="/en/city-guide/paris-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/paris-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Paris</a
+                            >Paris</router-link
                           >
                         </li>
                       </div>
@@ -1246,17 +1246,17 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/milan-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/milan-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Milan</a
+                            >Milan</router-link
                           >
                         </li>
                         <li>
-                          <a
-                            href="/en/city-guide/rome-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/rome-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Rome</a
+                            >Rome</router-link
                           >
                         </li>
                       </div>
@@ -1279,10 +1279,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/prishtina-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/prishtina-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Prishtina</a
+                            >Prishtina</router-link
                           >
                         </li>
                       </div>
@@ -1305,17 +1305,17 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/sarajevo-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/sarajevo-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Sarajevo</a
+                            >Sarajevo</router-link
                           >
                         </li>
                         <li>
-                          <a
-                            href="/en/city-guide/tuzla-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/tuzla-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Tuzla</a
+                            >Tuzla</router-link
                           >
                         </li>
                       </div>
@@ -1338,10 +1338,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/skopje-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/skopje-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Skopje</a
+                            >Skopje</router-link
                           >
                         </li>
                       </div>
@@ -1364,10 +1364,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/stockholm-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/stockholm-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Stockholm</a
+                            >Stockholm</router-link
                           >
                         </li>
                       </div>
@@ -1380,10 +1380,10 @@
                       >
                       <div class="flex flex-column gap-2">
                         <li>
-                          <a
-                            href="/en/city-guide/vienna-flight-ticket"
+                          <router-link
+                            to="/en/city-guide/vienna-flight-ticket"
                             class="text-sm font-medium text-color-strong"
-                            >Vienna</a
+                            >Vienna</router-link
                           >
                         </li>
                       </div>
@@ -1832,7 +1832,7 @@
                           available on our flights may differ from the
                           above-mentioned periods according to the fare rules,
                           you can contact the sales office,
-                          <a href="/en/contact" target="_blank">Call Center</a>
+                          <router-link to="/en/contact" target="_blank">Call Center</router-link>
                           or your agency for more detailed information.
                         </p>
                       </div>
