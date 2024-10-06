@@ -6,7 +6,7 @@ import NotFound from '@/views/NotFound.vue'; // The custom 404 component you'll 
 
 
 export const router = createRouter({
-  history: createWebHashHistory(), // Using hash mode for routing
+  history: createWebHashHistory('/ajet-clone'), // Using hash mode for routing
   routes: [
     {
       path: '/', 
