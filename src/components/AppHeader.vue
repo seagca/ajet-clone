@@ -2,13 +2,13 @@
   <div data-v-ba2b0ba0="" class="loader out"></div>
   <LoaderIcon />
   
-  <div data-v-834e9ed9="" class="header-fix" style="--22e0a771: 120px; --30596d21: 90px;"></div>
+  <div data-v-834e9ed9="" data-v-93c6af58="" class="header-fix" :style = "{'--22e0a771': headerHeight + 'px' , '--30596d21': topBannerHeight + 'px' , '--39271329': BannerHeight + 'px'}" ></div>
   <header
     data-v-93c6af58=""
     class="_ajt_large_container show-topbar"
-    style="--22e0a771: 120px; --30596d21: 90px"
+    :style = "{'--22e0a771': headerHeight + 'px'}"
   >
-    <div data-v-93c6af58="" class="submenu-container" >
+    <div data-v-93c6af58="" :class="{'submenu-container active': serviceActive , 'submenu-container': !serviceActive}" > 
       <div data-v-93c6af58="" class="submenu" @mouseover="serviceOpen()" @mouseleave="serviceClose()">
         <div data-v-93c6af58="" class="container">
           <div data-v-93c6af58="" class="sub-block">
@@ -39,7 +39,54 @@
       <div data-v-93c6af58="" class="submenu"></div>
       <div data-v-93c6af58="" class="submenu"><!----></div>
     </div>
-    <TopBanner />
+    <!---->
+    <div data-v-93c6af58="" class="top-banner-wrapper">
+      <Swiper
+
+        :modules="[Navigation, Autoplay]"
+        :slides-per-view="auto"
+        :loop="true"
+        :autoplay="{ delay: 3000 ,pauseOnMouseEnter: true}"
+        :navigation="{nextEl: '.swp-next', prevEl: '.swp-prev'}"
+        data-v-500f2780=""
+        data-v-93c6af58=""
+        :class="{'top-banner top-banner-container swiper-ios text-xs md:text-sm xl:text-base active': bannerActive , 'top-banner top-banner-container swiper-ios text-xs md:text-sm xl:text-base' : !bannerActive }"
+      >
+      <swiper-slide data-v-500f2780="" v-for="(item, index) in topSliderItems" :key="index">
+        <router-link data-v-500f2780="" :to = "item.url" >
+          <span data-v-500f2780="" class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68" style="color: rgb(0, 0, 0)">
+            <BannerPinIcon></BannerPinIcon>
+              {{ item.text }}
+          </span>
+        </router-link>
+      </swiper-slide>
+
+        <div
+          data-v-99e41b1c=""
+          data-v-500f2780=""
+          class="swp-buttons action-buttons"
+        >
+          <div data-v-99e41b1c="" class="swp swp-prev">
+            <img
+              data-v-99e41b1c=""
+              src="@/assets/arrow-left-4e890973.svg"
+              alt=""
+            />
+          </div>
+          <div data-v-99e41b1c="" class="swp swp-next">
+            <img
+              data-v-99e41b1c=""
+              src="@/assets/arrow-right-255a83a7.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </Swiper>
+      <div data-v-93c6af58="" class="close active" @click="closeBannerWrapper()">
+        <span data-v-93c6af58="" class="material-icons">cancel</span>
+      </div>
+    </div>
+  <!---->
     <div data-v-93c6af58="" class="menu-container">
       <main data-v-93c6af58="" class="">
         <router-link to="/"
@@ -254,17 +301,20 @@
 
 <script setup>
 import LoaderIcon from '@/components/svg/LoaderIcon.vue';
-import { onMounted } from 'vue';
+import BannerPinIcon from '@/components/svg/BannerPinIcon.vue';
+//import {  mounted} from 'vue';
 import {Navigation , Autoplay , Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import TopBanner from '@/components/TopBanner.vue';
+import {Swiper , SwiperSlide} from 'swiper/vue';
+
+/*mounted(() => {
+  window.addEventListener('scroll', this.handleScroll());
+  console.log('scroll event added');
+});*/
 
 
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-});
 
 </script>
 
@@ -273,15 +323,23 @@ onMounted(() => {
 
 
 
+
 export default {
   components: {
     LoaderIcon,
-    TopBanner,
+    Swiper,
+    SwiperSlide,
+    BannerPinIcon,
   },
   data() {
     return {
         isActive: false,
-        subActive : false,
+        subActive: false,
+        serviceActive: false,
+        bannerActive: true,
+        headerHeight: 120, // --22e0a771
+        topBannerHeight: 90, // --30596d21
+        BannerHeight: 120, // --39271329
         topSliderItems: [
           {
             id: 1,
@@ -320,72 +378,67 @@ export default {
     subToggle() {
       this.subActive = !this.subActive; // Toggle the class when clicked
     },
+     serviceOpen() {
+      this.serviceActive = true; // Toggle the class when clicked
+    },
+    serviceClose() {
+      this.serviceActive = false; // Toggle the class when clicked
+    },
 
     closeBannerWrapper() {
-      const activeElements = document.querySelectorAll('.active[data-v-93c6af58]');
-      const headerFix = document.querySelector('.header-fix');
-      const largeContainer = document.querySelector('._ajt_large_container');
-      // Select active elements
-      
-      // Remove the "active" class from all active elements
-      activeElements.forEach(element => element.classList.remove("active"));
-
-      // Change the height using CSS variables
-      if (headerFix && largeContainer) {
-        headerFix.style.setProperty('--30596d21', '40px');
-        headerFix.style.setProperty('--39271329', '40px');
-        largeContainer.style.setProperty('--22e0a771', '70px');
-        largeContainer.style.setProperty('--30596d21', '40px');
-      }
-      
-      // Remove the top-banner-wrapper after a delay, if it exists
+          this.bannerActive = false;
+          
+          this.headerHeight = 70; // --22e0a771
+          this.topBannerHeight = 40; // --30596d21
+          this.BannerHeight = 40; // --39271329
+          //document.documentElement.style.setProperty('--22e0a771', '70px');
+          //document.documentElement.style.setProperty('--30596d21' topBannerHeight, '40px');
+          //document.documentElement.style.setProperty('--39271329', BannerHeight'40px');
+            
+        
       const topBannerWrapper = document.querySelector('.top-banner-wrapper');
       if (topBannerWrapper) {
         setTimeout(() => topBannerWrapper.remove(), 250);
       }
-    }
-  }
-};
+    },
+
+    /*handleScroll() {
+          this.headerHeight = 70; // --22e0a771
+          this.topBannerHeight = 40; // --30596d21
+          this.BannerHeight = 40; // --39271329
+        const largeContainer = document.querySelector('._ajt_large_container');
+        const headerFix = document.querySelector('.header-fix');
+        const topBannerContainer = document.querySelector('.top-banner-container');
+        const closeBanner = document.querySelector('.close[data-v-93c6af58]');
+        //const activeElements = document.querySelectorAll('.active[data-v-93c6af58]');
 
 
-const handleLogin = () => {
-  alert('You have successfully logged in!');  
-}
+  if (this.window.ScrollY > 50) {
+          this.headerHeight = 70; // --22e0a771
+        this.BannerHeight = 70;
+          this.bannerActive = false;
 
-
-const serviceOpen = () => {
-  const service = document.querySelector('.submenu-container[data-v-93c6af58]');
-  service.classList.add('active');
-}
-const serviceClose = () => {
-  const service = document.querySelector('.submenu-container[data-v-93c6af58]');
-  service.classList.remove('active');
-  
-}
-
-const handleScroll = () => {
-  const largeContainer = document.querySelector('._ajt_large_container');
-  const headerFix = document.querySelector('.header-fix');
-  const topBannerContainer = document.querySelector('.top-banner-container');
-  const closeBanner = document.querySelector('.close[data-v-93c6af58]');
-  const activeElements = document.querySelectorAll('.active[data-v-93c6af58]');
-
-
-  if (window.scrollY > 50) {
-    if (headerFix && largeContainer && topBannerContainer) {
-      largeContainer.style.setProperty('--22e0a771', '70px');
-      headerFix.style.setProperty('--39271329', '70px');
-      activeElements.forEach(element => element.classList.remove('active'));
-    }
   } else {
     if (topBannerContainer) {
+      this.bannerActive = true;
+
       topBannerContainer.classList.add('active');
       closeBanner.classList.add('active');
       largeContainer.style.setProperty('--22e0a771', '120px');
       headerFix.style.setProperty('--39271329', '120px');
     }
   }
+}*/
+    
+  }
 };
+
+
+
+const handleLogin = () => {
+  alert('You have successfully logged in!');
+};
+
 
 
 
