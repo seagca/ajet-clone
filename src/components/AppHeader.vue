@@ -298,14 +298,14 @@
 
 
 <script setup>
-import LoaderIcon from '@/components/LoaderIcon.vue';
+import LoaderIcon from '@/components/svg/LoaderIcon.vue';
 import { onMounted } from 'vue';
 import {Swiper , SwiperSlide} from 'swiper/vue';
 import {Navigation , Autoplay , Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import BannerPinIcon from '@/components/BannerPinIcon.vue';
+import BannerPinIcon from '@/components/svg/BannerPinIcon.vue';
 
 
 onMounted(() => {
