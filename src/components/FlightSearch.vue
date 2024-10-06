@@ -1991,13 +1991,13 @@ export default {
           id: 0,
           text: "Trabzon",
           url: "/en/city-guide/trabzon-flight-ticket",
-          style: "--55b64b8c: url(/_ajt_theme/img/city-guide/trabzon.webp);",
+          style: "--55b64b8c: url(/ajet-clone/_ajt_theme/img/city-guide/trabzon.webp);",
         },
         {
           id: 1,
           text: "Erzurum",
           url: "/en/city-guide/erzurum-flight-ticket",
-          style: "--55b64b8c: url(@/assets/_ajt_theme/img/city-guide/erzurum.webp);",
+          style: "--55b64b8c: url(/ajet-clone/_ajt_theme/img/city-guide/erzurum.webp);",
         },
         {
           id: 2,
