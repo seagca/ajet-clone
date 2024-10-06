@@ -1,28 +1,57 @@
 <template>
   <div data-v-ba2b0ba0="" class="loader out"></div>
   <LoaderIcon />
-  
-  <div data-v-834e9ed9="" data-v-93c6af58="" class="header-fix" :style = "{'--22e0a771': headerHeight + 'px' , '--30596d21': topBannerHeight + 'px' , '--39271329': BannerHeight + 'px'}" ></div>
+
+  <div
+    data-v-834e9ed9=""
+    data-v-93c6af58=""
+    class="header-fix"
+    :style="{
+      '--22e0a771': headerHeight,
+      '--30596d21': topBannerHeight,
+      '--39271329': BannerHeight,
+    }"
+  ></div>
   <header
     data-v-93c6af58=""
     class="_ajt_large_container show-topbar"
-    :style = "{'--22e0a771': headerHeight + 'px'}"
+    :style="{ '--22e0a771': headerHeight, '--30596d21': topBannerHeight }"
   >
-    <div data-v-93c6af58="" :class="{'submenu-container active': serviceActive , 'submenu-container': !serviceActive}" > 
-      <div data-v-93c6af58="" class="submenu" @mouseover="serviceOpen()" @mouseleave="serviceClose()">
+    <div
+      data-v-93c6af58=""
+      :class="{
+        'submenu-container active': serviceActive,
+        'submenu-container': !serviceActive,
+      }"
+    >
+      <div
+        data-v-93c6af58=""
+        :class="{ 'submenu active': serviceActive, submenu: !serviceActive }"
+        @mouseover="serviceOpen()"
+        @mouseleave="serviceClose()"
+      >
         <div data-v-93c6af58="" class="container">
           <div data-v-93c6af58="" class="sub-block">
             <h3 data-v-93c6af58="">Pre-Flight</h3>
             <span data-v-93c6af58=""
-              ><router-link data-v-93c6af58="" to="/en/services/free-check-in" class=""
+              ><router-link
+                data-v-93c6af58=""
+                to="/en/services/free-check-in"
+                class=""
                 >Free Check-in</router-link
               ></span
             ><span data-v-93c6af58=""
-              ><router-link data-v-93c6af58="" to="/en/services/seat-selection" class=""
+              ><router-link
+                data-v-93c6af58=""
+                to="/en/services/seat-selection"
+                class=""
                 >Seat Selection</router-link
               ></span
             ><span data-v-93c6af58=""
-              ><router-link data-v-93c6af58="" to="/en/services/excess-baggage" class=""
+              ><router-link
+                data-v-93c6af58=""
+                to="/en/services/excess-baggage"
+                class=""
                 >Excess Baggage</router-link
               ></span
             ><span data-v-93c6af58=""
@@ -42,24 +71,36 @@
     <!---->
     <div data-v-93c6af58="" class="top-banner-wrapper">
       <Swiper
-
         :modules="[Navigation, Autoplay]"
         :slides-per-view="auto"
         :loop="true"
-        :autoplay="{ delay: 3000 ,pauseOnMouseEnter: true}"
-        :navigation="{nextEl: '.swp-next', prevEl: '.swp-prev'}"
+        :autoplay="{ delay: 3000, pauseOnMouseEnter: true }"
+        :navigation="{ nextEl: '.swp-next', prevEl: '.swp-prev' }"
         data-v-500f2780=""
         data-v-93c6af58=""
-        :class="{'top-banner top-banner-container swiper-ios text-xs md:text-sm xl:text-base active': bannerActive , 'top-banner top-banner-container swiper-ios text-xs md:text-sm xl:text-base' : !bannerActive }"
+        :class="{
+          'top-banner top-banner-container swiper-ios text-xs md:text-sm xl:text-base active':
+            bannerActive,
+          'top-banner top-banner-container swiper-ios text-xs md:text-sm xl:text-base':
+            !bannerActive,
+        }"
       >
-      <swiper-slide data-v-500f2780="" v-for="(item, index) in topSliderItems" :key="index">
-        <router-link data-v-500f2780="" :to = "item.url" >
-          <span data-v-500f2780="" class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68" style="color: rgb(0, 0, 0)">
-            <BannerPinIcon></BannerPinIcon>
+        <swiper-slide
+          data-v-500f2780=""
+          v-for="(item, index) in topSliderItems"
+          :key="index"
+        >
+          <router-link data-v-500f2780="" :to="item.url">
+            <span
+              data-v-500f2780=""
+              class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68"
+              style="color: rgb(0, 0, 0)"
+            >
+              <BannerPinIcon></BannerPinIcon>
               {{ item.text }}
-          </span>
-        </router-link>
-      </swiper-slide>
+            </span>
+          </router-link>
+        </swiper-slide>
 
         <div
           data-v-99e41b1c=""
@@ -82,14 +123,19 @@
           </div>
         </div>
       </Swiper>
-      <div data-v-93c6af58="" class="close active" @click="closeBannerWrapper()">
+      <div
+        data-v-93c6af58=""
+        :class="{ 'close active': bannerActive, close: !bannerActive }"
+        @click="closeBannerWrapper()"
+      >
         <span data-v-93c6af58="" class="material-icons">cancel</span>
       </div>
     </div>
-  <!---->
+    <!---->
     <div data-v-93c6af58="" class="menu-container">
       <main data-v-93c6af58="" class="">
-        <router-link to="/"
+        <router-link
+          to="/"
           data-v-93c6af58=""
           class="home-link"
           aria-current="page"
@@ -98,8 +144,12 @@
             src="@/assets/ajet-logo-0d41a81e.svg"
             alt="AJet"
         /></router-link>
-        <div data-v-93c6af58="" class="menu-items" >
-          <span data-v-93c6af58="" class="item hidden lg:flex" @mouseover="serviceOpen()" @mouseleave="serviceClose()"
+        <div data-v-93c6af58="" class="menu-items">
+          <span
+            data-v-93c6af58=""
+            class="item hidden lg:flex"
+            @mouseover="serviceOpen()"
+            @mouseleave="serviceClose()"
             ><router-link
               data-v-93c6af58=""
               to="/en/services"
@@ -156,9 +206,15 @@
               src="@/assets/menu-toggle-cde1118c.svg"
               class="mob-toggle"
               alt=""
-              @click= "toggleClass()"
+              @click="toggleClass()"
             />
-            <div data-v-93c6af58="" :class="{'mob-menu-content active': isActive, 'mob-menu-content': !isActive}">
+            <div
+              data-v-93c6af58=""
+              :class="{
+                'mob-menu-content active': isActive,
+                'mob-menu-content': !isActive,
+              }"
+            >
               <img
                 data-v-93c6af58=""
                 src="@/assets/ajet-logo-big-blue-4e958dd2.svg"
@@ -169,7 +225,9 @@
                 <div
                   data-v-93c6af58=""
                   class="language-select lang-select lg:flex"
-                  style="--2beacc2e: url(/ajet-clone/menu-lang-bg-n-d5cdc789.svg)"
+                  style="
+                    --2beacc2e: url(/ajet-clone/menu-lang-bg-n-d5cdc789.svg);
+                  "
                 >
                   <span class="hover-root"
                     ><img src="@/assets/world-0909cfa7.svg" alt="" /><span
@@ -186,8 +244,13 @@
                       alt=""
                   /></span>
                 </div>
-                <span data-v-93c6af58="" :class="{'item active': subActive, 'item': !subActive}"
-                  ><router-link data-v-93c6af58="" to="/en/services" class="item-link"
+                <span
+                  data-v-93c6af58=""
+                  :class="{ 'item active': subActive, item: !subActive }"
+                  ><router-link
+                    data-v-93c6af58=""
+                    to="/en/services"
+                    class="item-link"
                     >Services</router-link
                   ><img
                     data-v-93c6af58=""
@@ -229,7 +292,10 @@
                     >
                   </div> </span
                 ><span data-v-93c6af58="" class="item"
-                  ><router-link data-v-93c6af58="" to="/en/city-guide" class="item-link"
+                  ><router-link
+                    data-v-93c6af58=""
+                    to="/en/city-guide"
+                    class="item-link"
                     >City Guide</router-link
                   ><!---->
                   <div data-v-93c6af58="" class="subs"></div> </span
@@ -284,8 +350,8 @@
               type="button"
               data-pc-name="button"
               data-pc-section="root"
-              @click=" handleLogin()"
-              >
+              @click="handleLogin()"
+            >
               <span class="hidden md:inline mr-8">Login</span
               ><span class="material-icons md-20">login</span>
             </button>
@@ -297,33 +363,17 @@
   </header>
 </template>
 
-
-
 <script setup>
-import LoaderIcon from '@/components/svg/LoaderIcon.vue';
-import BannerPinIcon from '@/components/svg/BannerPinIcon.vue';
-//import {  mounted} from 'vue';
-import {Navigation , Autoplay , Pagination} from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import {Swiper , SwiperSlide} from 'swiper/vue';
-
-/*mounted(() => {
-  window.addEventListener('scroll', this.handleScroll());
-  console.log('scroll event added');
-});*/
-
-
-
+import LoaderIcon from "@/components/svg/LoaderIcon.vue";
+import BannerPinIcon from "@/components/svg/BannerPinIcon.vue";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/vue";
 </script>
 
-
 <script>
-
-
-
-
 export default {
   components: {
     LoaderIcon,
@@ -333,52 +383,56 @@ export default {
   },
   data() {
     return {
-        isActive: false,
-        subActive: false,
-        serviceActive: false,
-        bannerActive: true,
-        headerHeight: 120, // --22e0a771
-        topBannerHeight: 90, // --30596d21
-        BannerHeight: 120, // --39271329
-        topSliderItems: [
-          {
-            id: 1,
-            url: '/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet',
-            text: 'Fly to Brand New Stories on 10 New Routes with AJet!',
-          },
-          {
-            id: 2,
-            url: '/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app',
-            text: 'Now, you can benefit from special discounts for disabled passengers, veterans, and relatives of martyrs, through AJet.com and AJet Mobile app!',
-          },
-          {
-            id: 3,
-            url: '/en/media/press-and-announcements/exclusive-lounges-welcome-ajet-passengers-in-domestic-flights',
-            text: 'Exclusive lounges welcome AJet passengers in domestic flights!',
-          },
-          {
-            id: 4,
-            url: '/en/media/press-and-announcements/extra-rights-given-to-passengers-due-to-events-affecting-our-lebanon-and-iraq-flight',
-            text: 'Extra Rights Given To Passengers Due To Events Affecting Our Lebanon And Iraq Flight',
-          },
-        ],
-      };
-    },
-  setup() {
-      return {
-        modules: [Navigation, Pagination, Autoplay],
-      };
-    },
-  
-  methods: {
+      isActive: false,
+      subActive: false,
+      serviceActive: false,
+      bannerActive: true,
+      headerHeight: "120px", // --22e0a771
+      topBannerHeight: "90px", // --30596d21
+      BannerHeight: "120px", // --39271329
+      topSliderItems: [
+        {
+          id: 1,
+          url: "/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet",
+          text: "Fly to Brand New Stories on 10 New Routes with AJet!",
+        },
+        {
+          id: 2,
+          url: "/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app",
+          text: "Now, you can benefit from special discounts for disabled passengers, veterans, and relatives of martyrs, through AJet.com and AJet Mobile app!",
+        },
+        {
+          id: 3,
+          url: "/en/media/press-and-announcements/exclusive-lounges-welcome-ajet-passengers-in-domestic-flights",
+          text: "Exclusive lounges welcome AJet passengers in domestic flights!",
+        },
+        {
+          id: 4,
+          url: "/en/media/press-and-announcements/extra-rights-given-to-passengers-due-to-events-affecting-our-lebanon-and-iraq-flight",
+          text: "Extra Rights Given To Passengers Due To Events Affecting Our Lebanon And Iraq Flight",
+        },
+      ],
+    };
+  },
+  mounted() {
+    this.scrollHandler = this.handleScroll;
+    window.addEventListener("scroll", this.handleScroll);
+  },
 
+  setup() {
+    return {
+      modules: [Navigation, Pagination, Autoplay],
+    };
+  },
+
+  methods: {
     toggleClass() {
       this.isActive = !this.isActive; // Toggle the class when clicked
     },
     subToggle() {
       this.subActive = !this.subActive; // Toggle the class when clicked
     },
-     serviceOpen() {
+    serviceOpen() {
       this.serviceActive = true; // Toggle the class when clicked
     },
     serviceClose() {
@@ -386,61 +440,41 @@ export default {
     },
 
     closeBannerWrapper() {
-          this.bannerActive = false;
-          
-          this.headerHeight = 70; // --22e0a771
-          this.topBannerHeight = 40; // --30596d21
-          this.BannerHeight = 40; // --39271329
-          //document.documentElement.style.setProperty('--22e0a771', '70px');
-          //document.documentElement.style.setProperty('--30596d21' topBannerHeight, '40px');
-          //document.documentElement.style.setProperty('--39271329', BannerHeight'40px');
-            
-        
-      const topBannerWrapper = document.querySelector('.top-banner-wrapper');
+      this.bannerActive = false;
+
+      this.headerHeight = "70px"; // --22e0a771
+      this.topBannerHeight = "40px"; // --30596d21
+      this.BannerHeight = "40px"; // --39271329
+      window.removeEventListener("scroll", this.scrollHandler);
+      const topBannerWrapper = document.querySelector(".top-banner-wrapper");
       if (topBannerWrapper) {
         setTimeout(() => topBannerWrapper.remove(), 250);
       }
     },
 
-    /*handleScroll() {
-          this.headerHeight = 70; // --22e0a771
-          this.topBannerHeight = 40; // --30596d21
-          this.BannerHeight = 40; // --39271329
-        const largeContainer = document.querySelector('._ajt_large_container');
-        const headerFix = document.querySelector('.header-fix');
-        const topBannerContainer = document.querySelector('.top-banner-container');
-        const closeBanner = document.querySelector('.close[data-v-93c6af58]');
-        //const activeElements = document.querySelectorAll('.active[data-v-93c6af58]');
+    handleScroll() {
+      
 
-
-  if (this.window.ScrollY > 50) {
-          this.headerHeight = 70; // --22e0a771
-        this.BannerHeight = 70;
-          this.bannerActive = false;
-
-  } else {
-    if (topBannerContainer) {
-      this.bannerActive = true;
-
-      topBannerContainer.classList.add('active');
-      closeBanner.classList.add('active');
-      largeContainer.style.setProperty('--22e0a771', '120px');
-      headerFix.style.setProperty('--39271329', '120px');
-    }
-  }
-}*/
-    
-  }
+      if (window.scrollY > 50) {
+        this.headerHeight = "70px"; // --22e0a771
+        this.topBannerHeight = "40px"; // --30596d21
+        this.BannerHeight = "70px"; // --39271329
+        this.bannerActive = false;
+      } else {
+        this.bannerActive = true;
+        this.headerHeight = "120px"; // --22e0a771
+        this.topBannerHeight = "90px"; // --30596d21
+        this.BannerHeight = "90px"; // --39271329
+        //topBannerContainer.classList.add('active');
+        //closeBanner.classList.add('active');
+        //largeContainer.style.setProperty('--22e0a771', '120px');
+        //headerFix.style.setProperty('--39271329', '120px');
+      }
+    },
+  },
 };
-
-
 
 const handleLogin = () => {
-  alert('You have successfully logged in!');
+  alert("You have successfully logged in!");
 };
-
-
-
-
 </script>
-

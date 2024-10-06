@@ -144,34 +144,6 @@ export default {
 
 
 
-const handleScroll = () => {
-    //this.headerHeight = 70; // --22e0a771
-      //    this.topBannerHeight = 40; // --30596d21
-        //  this.BannerHeight = 40; // --39271329
-  const largeContainer = document.querySelector('._ajt_large_container');
-  const headerFix = document.querySelector('.header-fix');
-  const topBannerContainer = document.querySelector('.top-banner-container');
-  const closeBanner = document.querySelector('.close[data-v-93c6af58]');
-  const activeElements = document.querySelectorAll('.active[data-v-93c6af58]');
-
-
-  if (window.scrollY > 50) {
-      if (headerFix && largeContainer && topBannerContainer) {
-          this.headerHeight = 70; // --22e0a771
-          this.BannerHeight = 40;
-      largeContainer.style.setProperty('--22e0a771', '70px');
-      headerFix.style.setProperty('--39271329', '70px');
-      activeElements.forEach(element => element.classList.remove('active'));
-    }
-  } else {
-    if (topBannerContainer) {
-      topBannerContainer.classList.add('active');
-      closeBanner.classList.add('active');
-      largeContainer.style.setProperty('--22e0a771', '120px');
-      headerFix.style.setProperty('--39271329', '120px');
-    }
-  }
-};
 
 
 </script>
