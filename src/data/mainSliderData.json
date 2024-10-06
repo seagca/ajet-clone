@@ -1,0 +1,26 @@
+[
+        {
+          "id": 0,
+          "url": "/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet",
+          "style":
+            "--ef97a558: url(/ajet-clone/ajt_theme/press/20240928/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/ajt_theme/press/20240928/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/ajt_theme/press/20240928/EN/1900x640.jpg);"
+        },
+        {
+          "id": 1,
+          "url": "/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app",
+          "style":
+            " --ef97a558: url(/ajet-clone/ajt_theme/press/20240929/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/ajt_theme/press/20240929/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/ajt_theme/press/20240929/EN/1900x640.jpg); "
+        },
+        {
+          "id": 2,
+          "url": "/en/media/press-and-announcements/exclusive-lounges-welcome-ajet-passengers-in-domestic-flights",
+          "style":
+            "--ef97a558: url(/ajet-clone/ajt_theme/press/20240911/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/ajt_theme/press/20240911/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/ajt_theme/press/20240911/EN/1900x640.jpg);"
+        },
+        {
+          "id": 3,
+          "url": "/en",
+          "style":
+            "--ef97a558: url(/ajet-clone/ajt_theme/press/20240813/EN/350x235.jpg); --d93e49d0: url(/ajet-clone/ajt_theme/press/20240813/EN/570x330.jpg); --ac9df3dc: url(/ajet-clone/ajt_theme/press/20240813/EN/1900x640.jpg);"
+        }
+      ]

@@ -201,7 +201,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
-
+import flightPointsSliderData from "@/data/flightPointsSliderData.json";
 
 </script>
 
@@ -214,32 +214,7 @@ export default {
   },
   data() {
     return {
-      flightPointsSlider: [
-        {
-          id: 0,
-          text: "Trabzon",
-          url: "/en/city-guide/trabzon-flight-ticket",
-          style: "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/trabzon.webp);",
-        },
-        {
-          id: 1,
-          text: "Erzurum",
-          url: "/en/city-guide/erzurum-flight-ticket",
-          style: "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/erzurum.webp);",
-        },
-        {
-          id: 2,
-          text: "Adana",
-          url: "/en/city-guide/adana-flight-ticket",
-          style: "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/adana.webp);",
-        },
-        {
-          id: 3,
-          text: "Bodrum",
-          url: "/en/city-guide/bodrum-flight-ticket",
-          style: "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/bodrum.webp);",
-        },
-      ],
+      flightPointsSlider: flightPointsSliderData,
     };
   },
   setup() {

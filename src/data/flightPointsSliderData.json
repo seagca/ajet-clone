@@ -1,0 +1,51 @@
+[
+        {
+          "id": 0,
+          "text": "İstanbul",
+          "url": "/en/city-guide/istanbul-flight-ticket",
+          "style": "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/istanbul.webp);"
+        },
+        {
+          "id": 1,
+          "text": "London",
+          "url": "/en/city-guide/London-flight-ticket",
+          "style": "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/London.webp);"
+        },
+        {
+          "id": 2,
+          "text": "Vienna",
+          "url": "/en/city-guide/vienna-flight-ticket",
+          "style": "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/vienna.webp);"
+        },
+        {
+          "id": 3,
+          "text": "Kayseri",
+          "url": "/en/city-guide/kayseri-flight-ticket",
+          "style": "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/kayseri.webp);"
+        },
+        {
+          "id": 4,
+          "text": "Trabzon",
+          "url": "/en/city-guide/trabzon-flight-ticket",
+          "style": "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/trabzon.webp);"
+        },
+        {
+          "id": 5,
+          "text": "Erzurum",
+          "url": "/en/city-guide/erzurum-flight-ticket",
+          "style": "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/erzurum.webp);"
+        },
+        {
+          "id": 6,
+          "text": "Adana",
+          "url": "/en/city-guide/adana-flight-ticket",
+          "style": "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/adana.webp);"
+        },
+        {
+          "id": 7,
+          "text": "Bodrum",
+          "url": "/en/city-guide/bodrum-flight-ticket",
+          "style": "--55b64b8c: url(/ajet-clone/ajt_theme/img/city-guide/bodrum.webp);"
+        }
+        
+      ]

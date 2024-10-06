@@ -371,6 +371,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/vue";
+import topSliderData from "@/data/topSliderData.json";
 </script>
 
 <script>
@@ -390,28 +391,7 @@ export default {
       headerHeight: "120px", // --22e0a771
       topBannerHeight: "90px", // --30596d21
       BannerHeight: "120px", // --39271329
-      topSliderItems: [
-        {
-          id: 1,
-          url: "/en/media/press-and-announcements/fly-to-brand-new-stories-on-10-new-routes-with-ajet",
-          text: "Fly to Brand New Stories on 10 New Routes with AJet!",
-        },
-        {
-          id: 2,
-          url: "/en/media/press-and-announcements/now-you-can-benefit-from-special-discounts-for-disabled-passengers-veterans-and-relatives-of-martyrs-through-ajetcom-and-ajet-mobile-app",
-          text: "Now, you can benefit from special discounts for disabled passengers, veterans, and relatives of martyrs, through AJet.com and AJet Mobile app!",
-        },
-        {
-          id: 3,
-          url: "/en/media/press-and-announcements/exclusive-lounges-welcome-ajet-passengers-in-domestic-flights",
-          text: "Exclusive lounges welcome AJet passengers in domestic flights!",
-        },
-        {
-          id: 4,
-          url: "/en/media/press-and-announcements/extra-rights-given-to-passengers-due-to-events-affecting-our-lebanon-and-iraq-flight",
-          text: "Extra Rights Given To Passengers Due To Events Affecting Our Lebanon And Iraq Flight",
-        },
-      ],
+      topSliderItems: topSliderData,
     };
   },
   mounted() {
