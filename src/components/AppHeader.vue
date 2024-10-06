@@ -39,52 +39,7 @@
       <div data-v-93c6af58="" class="submenu"></div>
       <div data-v-93c6af58="" class="submenu"><!----></div>
     </div>
-    <div data-v-93c6af58="" class="top-banner-wrapper">
-      <Swiper
-
-        :modules="[Navigation, Autoplay]"
-        :slides-per-view="auto"
-        :loop="true"
-        :autoplay="{ delay: 3000 ,pauseOnMouseEnter: true}"
-        :navigation="{nextEl: '.swp-next', prevEl: '.swp-prev'}"
-        data-v-500f2780=""
-        data-v-93c6af58=""
-        class="top-banner top-banner-container swiper-ios text-xs md:text-sm xl:text-base active"
-      >
-      <swiper-slide data-v-500f2780="" v-for="(item, index) in topSliderItems" :key="index">
-        <router-link data-v-500f2780="" :to = "item.url" >
-          <span data-v-500f2780="" class="slide block overflow-hidden white-space-nowrap text-overflow-ellipsis pr-68" style="color: rgb(0, 0, 0)">
-            <BannerPinIcon></BannerPinIcon>
-              {{ item.text }}
-          </span>
-        </router-link>
-      </swiper-slide>
-
-        <div
-          data-v-99e41b1c=""
-          data-v-500f2780=""
-          class="swp-buttons action-buttons"
-        >
-          <div data-v-99e41b1c="" class="swp swp-prev">
-            <img
-              data-v-99e41b1c=""
-              src="@/assets/arrow-left-4e890973.svg"
-              alt=""
-            />
-          </div>
-          <div data-v-99e41b1c="" class="swp swp-next">
-            <img
-              data-v-99e41b1c=""
-              src="@/assets/arrow-right-255a83a7.svg"
-              alt=""
-            />
-          </div>
-        </div>
-      </Swiper>
-      <div data-v-93c6af58="" class="close active" @click="closeBannerWrapper">
-        <span data-v-93c6af58="" class="material-icons">cancel</span>
-      </div>
-    </div>
+    <TopBanner />
     <div data-v-93c6af58="" class="menu-container">
       <main data-v-93c6af58="" class="">
         <router-link to="/"
@@ -300,12 +255,11 @@
 <script setup>
 import LoaderIcon from '@/components/svg/LoaderIcon.vue';
 import { onMounted } from 'vue';
-import {Swiper , SwiperSlide} from 'swiper/vue';
 import {Navigation , Autoplay , Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import BannerPinIcon from '@/components/svg/BannerPinIcon.vue';
+import TopBanner from '@/components/TopBanner.vue';
 
 
 onMounted(() => {
@@ -321,10 +275,8 @@ onMounted(() => {
 
 export default {
   components: {
-    Swiper,
-    SwiperSlide,
     LoaderIcon,
-    BannerPinIcon,
+    TopBanner,
   },
   data() {
     return {

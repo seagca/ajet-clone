@@ -19,7 +19,7 @@ export const router = createRouter({
     },
     {
       path: '/:catchAll(.*)',
-      name: 'NotFound',
+      name: '404',
       component: NotFound
     },
     ],

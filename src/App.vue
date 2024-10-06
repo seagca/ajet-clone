@@ -1,9 +1,6 @@
 <template>
   <div id="app" data-v-app="">
-    <AppHeader />
-    <FlightSearch />
-    <AppFooter />
-    <AppHome />
+    
     <router-view />
   </div>
 </template>
