@@ -1,7 +1,6 @@
 <template>
   <div class="_ajt_large_container home-page">
-    <MainSlider /> 
-    
+    <MainSlider />
 
     <main class="full">
       <ServiceBlock />
@@ -9,16 +8,11 @@
       <CitiesBlock />
       <NewsBlock />
       <FaqBlock />
-      
-      
-      
-      
     </main>
   </div>
 </template>
 
 <script setup>
-//import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import MainSlider from "@/components/MainSlider.vue";
 import ServiceBlock from "@/components/main/ServiceBlock.vue";
@@ -33,8 +27,6 @@ import mainSliderData from "@/data/mainSliderData.json";
 export default {
   name: "FlightSearch",
   components: {
-    //Swiper,
-    //SwiperSlide,
     MainSlider,
     ServiceBlock,
     DestinationsBlock,

@@ -433,8 +433,6 @@ export default {
     },
 
     handleScroll() {
-      
-
       if (window.scrollY > 50) {
         this.headerHeight = "70px"; // --22e0a771
         this.topBannerHeight = "40px"; // --30596d21
